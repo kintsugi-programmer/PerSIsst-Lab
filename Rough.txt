@@ -1,0 +1,20 @@
+#Local Host
+
+##Tailwind+Vite Guide
+https://tailwindcss.com/docs/guides/vite
+
+##Install NixOS For Easy 
+https://nixos.org/download/
+
+##Terminal Session
+nix-shell -p nodejs
+
+nix-shell
+
+clear
+
+npm create vite@latest my-project -- --template react
+cd my-project
+
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
