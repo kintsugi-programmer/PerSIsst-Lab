@@ -1,6 +1,8 @@
 # PerSIsst-Lab
 The PerSIsst Lab Website Development project aims to create a dynamic online presence for the PerSIsst Lab, founded by Dr. Pragma Kar ,HCD IIITD.
 
+React Tailwind Vite
+
 ## Table of Contents
 - [PerSIsst-Lab](#persisst-lab)
   - [Table of Contents](#table-of-contents)
@@ -13,6 +15,9 @@ The PerSIsst Lab Website Development project aims to create a dynamic online pre
   - [tailwind.config.js for uniformity of color and styles](#tailwindconfigjs-for-uniformity-of-color-and-styles)
   - [index.css](#indexcss)
   - [React install](#react-install)
+  - [Router](#router)
+  - [delete pre existing assets](#delete-pre-existing-assets)
+  - [have tutorial assets](#have-tutorial-assets)
 
 # React + Vite
 
@@ -301,3 +306,15 @@ export default {
 
 ## React install
 npm install react-router-dom
+
+
+## Router
+<Router> //Whole app is wrapped in Router
+      <App />
+    </Router>
+
+import { BrowserRouter as Router } from "react-router-dom";
+
+
+## delete pre existing assets
+## have tutorial assets
