@@ -18,6 +18,9 @@ React Tailwind Vite
   - [Router](#router)
   - [delete pre existing assets](#delete-pre-existing-assets)
   - [have tutorial assets](#have-tutorial-assets)
+  - [rafce](#rafce)
+- [https://marketplace.visualstudio.com/items?itemName=rodrigovallades.es7-react-js-snippets](#httpsmarketplacevisualstudiocomitemsitemnamerodrigovalladeses7-react-js-snippets)
+- [Complex Reusable components such as button,](#complex-reusable-components-such-as-button)
 
 # React + Vite
 
@@ -318,3 +321,27 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 ## delete pre existing assets
 ## have tutorial assets
+
+<link rel="icon" type="image/svg+xml" href="./src/assets/brainwave-symbol.svg" />
+
+
+import ButtonGradient from "./assets/svg/ButtonGradient";
+
+v1/src/components/Button.jsx
+
+## rafce
+import React from 'react'
+
+const Button = () => {
+  return (
+    <div>Button</div>
+  )
+}
+
+export default Button
+
+# https://marketplace.visualstudio.com/items?itemName=rodrigovallades.es7-react-js-snippets
+
+# Complex Reusable components such as button,
+more ease in proj
+        <Button className="mt-10" href="#login" ></Button>
