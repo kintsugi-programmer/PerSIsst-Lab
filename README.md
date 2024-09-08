@@ -17,3 +17,31 @@ DevOps:
 
 
 PS C:\Users\Siddhant bali\OneDrive\Documents\GitHub\PerSIsst-Lab\v1> npm install bcrypt mongodb mongoose next-auth
+The folder structure you've provided represents the PerSIsst Lab project you're working on. Here's a brief breakdown of the key directories and files:
+
+1. **Root Directory:**
+   - `app`, `components`, `data`, `lib`, `models`, `roughapp`, `styles` — The main directories for organizing the app's structure.
+   - Configuration files like `jsconfig.json`, `next.config.mjs`, `tailwind.config.js`, etc.
+
+2. **App Directory:**
+   - `app`: Contains the main sections of your Next.js project, including routes for "about," "beyond," "blogs," "members," "opportunities," and "research."
+   - Example files include `Lab.jsx`, `Collaborators.jsx`, `AluminiStories.jsx`, and `page.jsx`, reflecting different aspects of the site (about the lab, opportunities, etc.).
+
+3. **Components Directory:**
+   - `Nav.jsx`, `Footer.jsx`: Likely header and footer components for the website.
+
+4. **Data Directory:**
+   - `example.json`: Placeholder for some dataset.
+
+5. **Lib Directory:**
+   - `mongodb.js`: Contains MongoDB connection logic or related functionality.
+
+6. **Models Directory:**
+   - `User.js`: Defines the data model for user-related information.
+
+7. **Roughapp Directory:**
+   - This appears to be an early or alternate version of the app, containing files like `globals.css`, `layout.js`, `page.js`, and custom fonts.
+
+8. **Styles Directory:**
+   - `globals.css`: Global CSS styles for the app.
+

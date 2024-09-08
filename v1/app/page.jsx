@@ -1,9 +1,18 @@
-import React from 'react'
+import React from 'react';
+import Nav from '../components/Nav';
+import Footer from '../components/Footer';
 
-const page = () => {
+const Page = () => {
   return (
-    <div>page</div>
-  )
-}
+    <div>
+      <Nav />
+      <div>
+        <h1>Welcome to the PerSIsst Lab</h1>
+        <p>This is the main landing page of the PerSIsst Lab.</p>
+      </div>
+      <Footer />
+    </div>
+  );
+};
 
-export default page
+export default Page;
