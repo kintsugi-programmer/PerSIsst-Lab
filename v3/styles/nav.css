@@ -1,0 +1,68 @@
+/* Styling for the navigation bar */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  .mainMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menuItem {
+    position: relative; /* Important for dropdown positioning */
+  }
+  
+  .menuItem > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: #333;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menuItem > a:hover {
+    background-color: #444;
+  }
+  
+  /* Submenu styling */
+  .subMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute; /* Allows it to drop down */
+    top: 100%; /* Positions submenu below the main menu item */
+    left: 0;
+    background-color: #333;
+    display: none; /* Hidden by default */
+    min-width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional for a dropdown shadow effect */
+  }
+  
+  .subMenu li a {
+    padding: 10px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    background-color: #333;
+    transition: background-color 0.3s ease;
+  }
+  
+  .subMenu li a:hover {
+    background-color: #444;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .menuItem:hover .subMenu {
+    display: block;
+  }
+  
+  /* Ensures the main menu stays horizontally aligned */
+  .mainMenu > li {
+    position: relative;
+  }
+  
