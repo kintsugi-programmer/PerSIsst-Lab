@@ -40,7 +40,7 @@ const Hero = () => {
               className="mr-2"
               
               
-            /> <Link href={"/About"}>     
+            /> <Link href={"/Research"}>     
 Explore Research </Link>
   </span>
 </button>

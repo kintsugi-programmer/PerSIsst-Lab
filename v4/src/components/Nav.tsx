@@ -39,20 +39,20 @@ function Navbar({ className }: { className?: string }) {
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/About/Lab">PerSIst Lab</HoveredLink>
             <HoveredLink href="/About/Professor">Professors</HoveredLink>
-            <HoveredLink href="/Beyond/AluminiStories">Alumni Stories</HoveredLink>
-            <HoveredLink href="/Beyond/ImpactfulBlogs">Impactful Blogs</HoveredLink>
+            <HoveredLink href="/About/AluminiStories">Alumni Stories</HoveredLink>
+            <HoveredLink href="/About/ImpactfulBlogs">Impactful Blogs</HoveredLink>
           </div>
         </MenuItem>
 
 
         <MenuItem setActive={setActive} active={active} item="Community">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/Members/Core">Core Members</HoveredLink>
-            <HoveredLink href="/Members/Alumini">Alumni Members</HoveredLink>
-            <HoveredLink href="/Members/Btech">BTech Members</HoveredLink>
-            <HoveredLink href="/Members/Mtech">MTech Members</HoveredLink>
-            <HoveredLink href="/Members/Phd">PhD Members</HoveredLink>
-            <HoveredLink href="/Collaborators">Collaborators</HoveredLink>
+            <HoveredLink href="/Community/Core">Core Members</HoveredLink>
+            <HoveredLink href="/Community/Alumini">Alumni Members</HoveredLink>
+            <HoveredLink href="/Community/Btech">BTech Members</HoveredLink>
+            <HoveredLink href="/Community/Mtech">MTech Members</HoveredLink>
+            <HoveredLink href="/Community/Phd">PhD Members</HoveredLink>
+            <HoveredLink href="/Community/Collaborators">Collaborators</HoveredLink>
           </div>
         </MenuItem>
 
@@ -60,7 +60,7 @@ function Navbar({ className }: { className?: string }) {
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/Opportunities/Summer">Summer Openings</HoveredLink>
             <HoveredLink href="/Opportunities/Winter">Winter Openings</HoveredLink>
-            <HoveredLink href="/Opportunities/BIp">Independent Projects</HoveredLink>
+            <HoveredLink href="/Opportunities/IP">Independent Projects</HoveredLink>
             <HoveredLink href="/Opportunities/BTP">B.Tech. Projects</HoveredLink>
             <HoveredLink href="/Opportunities/RA">Research Associates</HoveredLink>
             <HoveredLink href="/Opportunities/Phd">Ph.D.  Openings</HoveredLink>
@@ -78,9 +78,9 @@ function Navbar({ className }: { className?: string }) {
 
         <MenuItem setActive={setActive} active={active} item="More">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/Blogs">Blogs</HoveredLink>
-            <HoveredLink href="/Sponsors">Sponsors</HoveredLink>
-            <HoveredLink href="/Contact">Contact</HoveredLink>
+            <HoveredLink href="/More/Blogs">Blogs</HoveredLink>
+            <HoveredLink href="/More/Sponsors">Sponsors</HoveredLink>
+            <HoveredLink href="/More/Contact">Contact</HoveredLink>
           </div>
         </MenuItem>
 
