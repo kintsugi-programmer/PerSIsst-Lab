@@ -1,9 +1,14 @@
+
 import React from 'react'
 import Link from 'next/link'
 import { WavyBackground } from './ui/wavy-background'
 import { FlipWords } from './ui/flip-words'
 import Image from 'next/image'
 import ToolTip from './ToolTip'
+import { HoverBorderGradient } from './ui/hover-border-gradient'
+import { Button } from './ui/moving-border'
+import reactElementToJSXString from "react-element-to-jsx-string";
+import { ButtonsCard } from './ui/tailwindcss-buttons'
 
 const Hero = () => {
     const words = ["Pervasive", "Sensing", "Intelligent", "Assistive"];
@@ -11,7 +16,7 @@ const Hero = () => {
   return (
     
     <div 
-    className='h-auto md:h-[70rem] w-full rounded-md flex flex-col item-center justify-center relative overflow-hidden mx-auto py-10 md:py-0'
+    className='h-auto md:h-[90rem] w-full rounded-md flex flex-col item-center justify-center relative overflow-hidden mx-auto py-10 md:py-0'
     >
         <WavyBackground className="max-w-4xl mx-auto pb-30">
             <div className='p-4 relative z-10 w-full text-center' >
@@ -45,9 +50,36 @@ const Hero = () => {
 Explore Research </Link>
   </span>
 </button>
+{/* <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+          Shimmer
+        </button> */}
+      {/* <Button
+                    borderRadius="1.75rem"
+                    className="bg-white dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800"
+                    >
+                    Explore courses
+                    </Button> */}
 
                     </div>
             </div>
+            <div className="m-40 flex justify-center text-center">
+      {/* <HoverBorderGradient
+        containerClassName="rounded-full"
+        as="button"
+        className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
+      >
+        hwedede
+        <span>Aceternity UI</span>
+      </HoverBorderGradient> */}
+
+    </div>
+
+
+  
+      
+
+
+      
         </WavyBackground>
         
         <ToolTip/>

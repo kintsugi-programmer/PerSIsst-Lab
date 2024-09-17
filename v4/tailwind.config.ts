@@ -11,9 +11,23 @@ const config: Config = {
   ],
   theme: {
     animation: {
+      spin: 'spin 2s linear infinite',
+      shimmer: "shimmer 2s linear infinite",
       aurora: "aurora 60s linear infinite",
     },
     keyframes: {
+      spin: {
+        '0%': { transform: 'rotate(0deg)' },
+        '100%': { transform: 'rotate(360deg)' },
+      },
+      shimmer: {
+        from: {
+          backgroundPosition: "0 0",
+        },
+        to: {
+          backgroundPosition: "-200% 0",
+        },
+      },
       aurora: {
         from: {
           backgroundPosition: "50% 50%, 50% 50%",
