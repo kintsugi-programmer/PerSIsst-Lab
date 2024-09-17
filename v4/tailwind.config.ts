@@ -11,11 +11,17 @@ const config: Config = {
   ],
   theme: {
     animation: {
+      scroll:"scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       spin: 'spin 2s linear infinite',
       shimmer: "shimmer 2s linear infinite",
       aurora: "aurora 60s linear infinite",
     },
     keyframes: {
+      scroll: {
+        to: {
+          transform: "translate(calc(-50% - 0.5rem))",
+        },
+      },
       spin: {
         '0%': { transform: 'rotate(0deg)' },
         '100%': { transform: 'rotate(360deg)' },
