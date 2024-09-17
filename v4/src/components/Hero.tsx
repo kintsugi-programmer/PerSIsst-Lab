@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { WavyBackground } from './ui/wavy-background'
 import { FlipWords } from './ui/flip-words'
 import Image from 'next/image'
+import ToolTip from './ToolTip'
 
 const Hero = () => {
     const words = ["Pervasive", "Sensing", "Intelligent", "Assistive"];
@@ -10,7 +11,7 @@ const Hero = () => {
   return (
     
     <div 
-    className='h-auto md:h-[60rem] w-full rounded-md flex flex-col item-center justify-center relative overflow-hidden mx-auto py-10 md:py-0'
+    className='h-auto md:h-[70rem] w-full rounded-md flex flex-col item-center justify-center relative overflow-hidden mx-auto py-10 md:py-0'
     >
         <WavyBackground className="max-w-4xl mx-auto pb-30">
             <div className='p-4 relative z-10 w-full text-center' >
@@ -48,6 +49,8 @@ Explore Research </Link>
                     </div>
             </div>
         </WavyBackground>
+        
+        <ToolTip/>
         
     </div>
   )

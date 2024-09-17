@@ -1,12 +1,23 @@
 import { footer } from 'framer-motion/client'
 import React from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
 
 const Footer = () => {
   return (
 <footer className="bg-black text-gray-400 py-12">
         <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4 sm:px-6 lg:px-8">
         <div>
-          <h2 className="text-white text-lg font-semibold mb-4">About Us</h2>
+          <h2 className="text-white text-lg font-semibold mb-4">          <Link href='/' className='flex gap-2 flex-center'>
+            <Image
+              src='/images/logo-text.svg'
+              alt='persisst logo'
+              width={100}
+              height={100}
+              
+            />
+          </Link></h2>
+
           <p className="mb-4">
           PerSIsst Lab develops intelligent, assistive solutions using advanced sensing to address challenges in cognition and smart living.
             </p>
