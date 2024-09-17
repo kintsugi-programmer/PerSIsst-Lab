@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     
     <div 
-    className='h-auto md:h-[50rem] w-full rounded-md flex flex-col item-center justify-center relative overflow-hidden mx-auto py-10 md:py-0'
+    className='h-auto md:h-[60rem] w-full rounded-md flex flex-col item-center justify-center relative overflow-hidden mx-auto py-10 md:py-0'
     >
         <WavyBackground className="max-w-4xl mx-auto pb-30">
             <div className='p-4 relative z-10 w-full text-center' >
