@@ -10,18 +10,23 @@
   },
   "dependencies": {
     "@radix-ui/react-label": "^2.1.0",
+    "@react-three/drei": "^9.114.0",
+    "@react-three/fiber": "^8.17.9",
     "@tabler/icons-react": "^3.17.0",
     "@tsparticles/engine": "^3.5.0",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.5.0",
+    "@types/three": "^0.169.0",
     "clsx": "^2.1.1",
-    "framer-motion": "^11.5.4",
+    "framer-motion": "^11.11.0",
+    "mini-svg-data-uri": "^1.4.4",
     "next": "14.2.11",
     "react": "^18",
     "react-dom": "^18",
     "react-element-to-jsx-string": "^15.0.0",
     "simplex-noise": "^4.0.3",
-    "tailwind-merge": "^2.5.2"
+    "tailwind-merge": "^2.5.3",
+    "three": "^0.169.0"
   },
   "devDependencies": {
     "@types/node": "^20",
