@@ -11,13 +11,6 @@ const people = [
   },
   {
     id: 2,
-    name: "Dr. Jainendra Shukla",
-    designation: "Lab Director",
-    image:
-      "/images/jshukla.jpg",
-  },
-  {
-    id: 3,
     name: "Siddhant Bali",
     designation: "Web Admin",
     image:
