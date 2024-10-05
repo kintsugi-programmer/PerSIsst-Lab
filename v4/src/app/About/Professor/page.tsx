@@ -67,7 +67,7 @@ human-computer interaction (HCI) designs.
 const BG2 = () => {
   return (
     <> {/* Added padding top and bottom */}
-      <HeroHighlight containerClassName="min-h-[calc(200vh-12rem)] md:min-h-[calc(200vh-12rem)]"> {/* Adjusted height */}
+      <HeroHighlight containerClassName=""> {/* Adjusted height */}
         <motion.div
           initial={{
             opacity: 0,
@@ -177,48 +177,48 @@ const WobbleCardDemo= () =>  {
           alt="linear demo image"
           className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
         /> */}
-        <div className="flex py-5 justify-left space-x-2">
-        <Link href="https://www.linkedin.com/in/pragma-kar-9419143a/" style={{ pointerEvents: 'auto' }}>
-        <Image
-            src="/images/icons/ln.png"
-            height="50"
-            width="30"
-            className="object-cover group-hover/card:shadow-xl"
-            alt="thumbnail"
-          />
-        </Link>
 
-        <Link href="https://scholar.google.com/citations?user=WSX1ovsAAAAJ&hl=en" style={{ pointerEvents: 'auto' }}>
-        <Image
-            src="/images/icons/gs.png"
-            height="50"
-            width="30"
-            className="object-cover group-hover/card:shadow-xl"
-            alt="thumbnail"
-          />
-        </Link>
+<div className="flex py-5 justify-left space-x-2">
+  <Link href="https://www.linkedin.com/in/pragma-kar-9419143a/" target="_blank" style={{ pointerEvents: 'auto' }}>
+    <Image
+      src="/images/icons/ln.png"
+      height="50"
+      width="30"
+      className="object-cover group-hover/card:shadow-xl"
+      alt="LinkedIn"
+    />
+  </Link>
 
-        <Link href="https://iiitd.irins.org/profile/554054" style={{ pointerEvents: 'auto' }}>
-        <Image
-            src="/images/icons/id.png"
-            height="50"
-            width="30"
-            className="object-cover group-hover/card:shadow-xl"
-            alt="thumbnail"
-          />
-        </Link>
+  <Link href="https://scholar.google.com/citations?user=WSX1ovsAAAAJ&hl=en" target="_blank" style={{ pointerEvents: 'auto' }}>
+    <Image
+      src="/images/icons/gs.png"
+      height="50"
+      width="30"
+      className="object-cover group-hover/card:shadow-xl"
+      alt="Google Scholar"
+    />
+  </Link>
 
-        <Link href="https://www.iiitd.ac.in/pragma" style={{ pointerEvents: 'auto' }}>
-        <Image
-            src="/images/icons/web.png"
-            height="50"
-            width="30"
-            className="object-cover group-hover/card:shadow-xl"
-            alt="thumbnail"
-          />
-        </Link>
+  <Link href="https://iiitd.irins.org/profile/554054" target="_blank" style={{ pointerEvents: 'auto' }}>
+    <Image
+      src="/images/icons/id.png"
+      height="50"
+      width="30"
+      className="object-cover group-hover/card:shadow-xl"
+      alt="IRINS Profile"
+    />
+  </Link>
 
-        </div>
+  <Link href="https://www.iiitd.ac.in/pragma" target="_blank" style={{ pointerEvents: 'auto' }}>
+    <Image
+      src="/images/icons/web.png"
+      height="50"
+      width="30"
+      className="object-cover group-hover/card:shadow-xl"
+      alt="Personal Website"
+    />
+  </Link>
+</div>
       </WobbleCard>
       <WobbleCard containerClassName="col-span-1 bg-purple-800 min-h-[300px]">
       <Image
@@ -230,79 +230,7 @@ const WobbleCardDemo= () =>  {
           />
         
       </WobbleCard>
-      <WobbleCard containerClassName="col-span-1 bg-purple-800 min-h-[300px]">
-      <Image
-            src="/images/shukla1.png"
-            height="500"
-            width="500"
-            className="h-100 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-            alt="thumbnail"
-          />
-      </WobbleCard>
-      <WobbleCard
-        containerClassName="col-span-1 lg:col-span-2 h-full bg-cyan-800 min-h-[500px] lg:min-h-[300px]"
-        className=""
-      >
-        {/* added padding pt-20 .its forced */}
-        <div className="max-w-xs pt-20">
-          <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-          Dr. Jainendra Shukla
-          </h2>
-          <p className="mt-4 text-left  text-base/6 text-neutral-200">
-Assistant Professor at the Department of Computer Science and Engineering in joint affiliation with the Department of Human-Centered Design at the IIIT-Delhi.
-          </p>
-        </div>
-
-        <div className="flex py-5 justify-left space-x-2">
-        <Link href="https://www.linkedin.com/in/jainendrashukla/" style={{ pointerEvents: 'auto' }}>
-        <Image
-            src="/images/icons/ln.png"
-            height="50"
-            width="30"
-            className="object-cover group-hover/card:shadow-xl"
-            alt="thumbnail"
-          />
-        </Link>
-
-        <Link href="https://scholar.google.es/citations?user=QCZleNQAAAAJ&hl=en" style={{ pointerEvents: 'auto' }}>
-        <Image
-            src="/images/icons/gs.png"
-            height="50"
-            width="30"
-            className="object-cover group-hover/card:shadow-xl"
-            alt="thumbnail"
-          />
-        </Link>
-
-        <Link href="https://iiitd.irins.org/profile/105062" style={{ pointerEvents: 'auto' }}>
-        <Image
-            src="/images/icons/id.png"
-            height="50"
-            width="30"
-            className="object-cover group-hover/card:shadow-xl"
-            alt="thumbnail"
-          />
-        </Link>
-
-        <Link href="https://www.iiitd.ac.in/jainendra" style={{ pointerEvents: 'auto' }}>
-        <Image
-            src="/images/icons/web.png"
-            height="50"
-            width="30"
-            className="object-cover group-hover/card:shadow-xl"
-            alt="thumbnail"
-          />
-        </Link>
-
-        </div> 
-        {/* <Image
-          src="/linear.webp"
-          width={500}
-          height={500}
-          alt="linear demo image"
-          className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
-        /> */}
-      </WobbleCard>
+     
       {/* <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
         <div className="max-w-sm">
           <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
