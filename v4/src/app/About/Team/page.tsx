@@ -41,7 +41,7 @@ const Type = () =>  {
       className: "text-purple-500 dark:text-purple-500",
     },
     {
-      text: "Professors",
+      text: "Team",
       className: "text-purple-500 dark:text-purple-500",
     },
   ];
