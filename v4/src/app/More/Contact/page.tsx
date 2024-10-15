@@ -103,6 +103,9 @@ Indraprastha Institute of Information Technology Delhi (IIIT-Delhi) ,<br />
 
 New Delhi, Delhi 110020
           </p>
+  
+
+
         </div>
         {/* <Image
           src="/linear.webp"
@@ -152,7 +155,26 @@ New Delhi, Delhi 110020
       alt="Personal Website"
     />
   </Link>
-</div>
+  </div>
+  <div className="flex justify-end ">
+  <button className=" relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+  <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+  <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-5 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+  <Image
+              src='/images/PerSIsst_Final 1.svg'
+              alt='persisst logo'
+              width={25}
+              height={100}
+              className="mr-2"
+              
+              
+            /> <Link href="mailto:pragma@iiitd.ac.in?subject=Enquiry: Here&body=Body Here">
+            Drop Email
+
+          </Link>
+  </span>
+</button></div>
+
       </WobbleCard>
       <div className="col-span-1 rounded-2xl overflow-hidden">
   <iframe
