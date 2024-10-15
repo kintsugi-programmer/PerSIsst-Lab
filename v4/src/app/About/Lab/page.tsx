@@ -21,10 +21,10 @@ const Lab = () => {
 
 const BG = () => {
   return (
-    <div className="h-[50rem] w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
+    <div className="h-[50rem] w-full bg-black :bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
       {/* Radial gradient for the container to give a faded look */}
       {/* <Type/> */}
-      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <Type/>
       {/* <div className="text-6xl sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8">
       About PerSIsst Lab </div> */}
@@ -35,18 +35,18 @@ const Type = () =>  {
   const words = [
     {
       text: " ",
-      className: "text-purple-500 dark:text-purple-500",
+      className: "text-purple-500",
     },
     {
       text: "About",
     },
     {
       text: "PerSIsst",
-      className: "text-purple-500 dark:text-purple-500",
+      className: "text-purple-500",
     },
     {
       text: "Lab",
-      className: "text-purple-500 dark:text-purple-500",
+      className: "text-purple-500",
     },
   ];
   return (
@@ -71,14 +71,14 @@ const Type2 = () =>  {
   const words = [
     {
       text: " ",
-      className: "text-purple-500 dark:text-purple-500",
+      className: "text-purple-500",
     },
     {
       text: "Our",
     },
     {
       text: "Purpose",
-      className: "text-purple-500 dark:text-purple-500",
+      className: "text-purple-500",
     },
 
   ];
@@ -155,7 +155,7 @@ Our work spans a variety of domains, from smart entertainment to education, alwa
 const Card_div = () => {
   return (
     <>
-      <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-white dark:bg-black w-full gap-4 mx-auto px-8">
+      <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-black w-full gap-4 mx-auto px-8">
         <Card ptr="Mission" title="Transforming everyday life through smart living technologies. We address challenges in cognition, mental health, and inclusive interaction with advanced sensing and
  AI-driven systems" icon={<V1 />}>
           <CanvasRevealEffect
@@ -174,7 +174,7 @@ const Card_div = () => {
             dotSize={2}
           />
           {/* Radial gradient for the cute fade */}
-          <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
+          <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/90" />
         </Card>
         <Card ptr="Values" title="Innovation, inclusivity, and teamwork drive our efforts to create solutions that improve well-being and make smart living accessible to everyone" icon={<V3 />}>
           <CanvasRevealEffect
@@ -206,12 +206,12 @@ const Card = ({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative h-[30rem] relative"
+      className="border  group/canvas-card flex items-center justify-center border-white/[0.2]  max-w-sm w-full mx-auto p-4 h-[30rem] relative"
     >
-      <Lcon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
-      <Lcon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
-      <Lcon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
-      <Lcon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
+      <Lcon className="absolute h-6 w-6 -top-3 -left-3 text-white " />
+      <Lcon className="absolute h-6 w-6 -bottom-3 -left-3 text-white " />
+      <Lcon className="absolute h-6 w-6 -top-3 -right-3 text-white " />
+      <Lcon className="absolute h-6 w-6 -bottom-3 -right-3 text-white " />
 
       <AnimatePresence>
         {hovered && (
@@ -229,11 +229,11 @@ const Card = ({
         <div className="text-center group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-100 transition duration-200 w-full  mx-auto flex items-center justify-center">
           {icon}
         </div>
-        <h2 className="dark:text-white text-3xl text-center opacity-100 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
+        <h2 className="text-white text-3xl text-center opacity-100 group-hover/canvas-card:opacity-100 relative z-10 mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
           {ptr}
         </h2>
         
-        <h2 className="dark:text-white text-xl text-center opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
+        <h2 className="text-white text-xl text-center opacity-0 group-hover/canvas-card:opacity-100 relative z-10 mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
           {title}
         </h2>
 

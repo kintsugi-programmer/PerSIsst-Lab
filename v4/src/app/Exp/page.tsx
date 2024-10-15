@@ -3,6 +3,7 @@ import ToolTip from '@/components/ToolTip'
 import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards'
 import Image from 'next/image'
 import Link from 'next/link'
+import { cn } from "@/lib/utils"
 
 const page = () => {
   return (
@@ -31,6 +32,78 @@ Explore Research </Link>
         speed="slow"
       />
     </div>    </div>
+
+    <div className="flex justify-center space-x-5 my-5 mx-5">
+    <CardDemo
+  title="Blog 1"
+  description="Coming Soon..."
+  author="Pragma Kar"
+  readTime="2 min read"
+  avatarSrc="/images/pragmakar.jpg"
+  backgroundImgSrc="/bg/2.jpg"
+  link="https://medium.com/"
+/>
+<CardDemo
+  title="Blog 2"
+  description="Coming Soon..."
+  author="Siddhant Bali"
+  readTime="5 min read"
+  avatarSrc="/images/bali.jpeg"
+  backgroundImgSrc="/bg/1.webp"
+  link="https://medium.com/"
+/>
+<CardDemo
+  title="Blog 3"
+  description="Coming Soon..."
+  author="Pragma Kar"
+  readTime="2 min read"
+  avatarSrc="/images/pragmakar.jpg"
+  backgroundImgSrc="/bg/3.png"
+  link="https://medium.com/"
+/>
+<CardDemo
+  title="Blog 2"
+  description="Coming Soon..."
+  author="Siddhant Bali"
+  readTime="5 min read"
+  avatarSrc="/images/bali.jpeg"
+  backgroundImgSrc="/bg/4.png"
+  link="https://medium.com/"
+/>
+</div>
+<div className="flex justify-center space-x-5 my-5 mx-5">
+<CardDemo
+  title="Blog 2"
+  description="Coming Soon..."
+  author="Siddhant Bali"
+  readTime="5 min read"
+  avatarSrc="/images/bali.jpeg"
+  backgroundImgSrc="/bg/4.png"
+  link="https://medium.com/"
+/>
+<CardDemo
+  title="Blog 1"
+  description="Coming Soon..."
+  author="Pragma Kar"
+  readTime="2 min read"
+  avatarSrc="/images/pragmakar.jpg"
+  backgroundImgSrc="/bg/2.jpg"
+  link="https://medium.com/"
+/>
+<CardDemo
+  title="Blog 2"
+  description="Coming Soon..."
+  author="Siddhant Bali"
+  readTime="5 min read"
+  avatarSrc="/images/bali.jpeg"
+  backgroundImgSrc="/bg/1.webp"
+  link="https://medium.com/"
+/>
+</div>
+
+
+
+
 
     </div>
   )
@@ -71,3 +144,69 @@ const testimonials = [
       title: "Moby-Dick",
     },
   ];
+
+
+
+
+  interface CardDemoProps {
+    title: string;
+    description: string;
+    author: string;
+    readTime: string;
+    avatarSrc: string;
+    backgroundImgSrc: string;
+    link:  string;
+  }
+  
+  const CardDemo: React.FC<CardDemoProps> = ({
+    title,
+    description,
+    author,
+    readTime,
+    avatarSrc,
+    backgroundImgSrc,
+    link,
+  }) => {
+    return (
+      <div className="max-w-xs w-full group/card">
+        <Link href={link} target="_blank" style={{ pointerEvents: 'auto' }}>
+        
+        <div
+          className={cn(
+            'cursor-pointer overflow-hidden relative card h-96 rounded-md shadow-xl max-w-sm mx-auto flex flex-col justify-between p-4'
+          )}
+          style={{
+            backgroundImage: `url(${backgroundImgSrc})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        >
+          <div className="absolute w-full h-full bg-black opacity-20 top-0 left-0 transition duration-300 group-hover/card:bg-black hover/card:opacity-60"></div>
+          <div className="flex flex-row items-center space-x-4 z-10">
+            <Image
+              height={100}
+              width={100}
+              alt="Avatar"
+              src={avatarSrc}
+              className="h-10 w-10 rounded-full border-2 object-cover"
+            />
+            <div className="flex flex-col">
+              <p className="font-normal text-base text-gray-50 relative z-10">
+                {author}
+              </p>
+              <p className="text-sm text-gray-400">{readTime}</p>
+            </div>
+          </div>
+          <div className="text content">
+            <h1 className="font-bold text-xl md:text-2xl text-gray-50 relative z-10">
+              {title}
+            </h1>
+            <p className="font-normal text-sm text-gray-50 relative z-10 my-4">
+              {description}
+            </p>
+          </div>
+        </div>
+        </Link>
+      </div>
+    );
+  };

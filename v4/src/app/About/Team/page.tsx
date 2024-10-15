@@ -31,18 +31,18 @@ const Type = () =>  {
   const words = [
     {
       text: " ",
-      className: "text-purple-500 dark:text-purple-500",
+      className: "text-purple-500",
     },
     {
       text: "About",
     },
     {
       text: "Our",
-      className: "text-purple-500 dark:text-purple-500",
+      className: "text-purple-500",
     },
     {
       text: "Team",
-      className: "text-purple-500 dark:text-purple-500",
+      className: "text-purple-500",
     },
   ];
   return (

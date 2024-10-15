@@ -16,9 +16,9 @@ const Hero = () => {
   return (
     
     <div 
-    className='h-auto md:h-[70rem] w-full rounded-md flex flex-col item-center justify-center relative overflow-hidden mx-auto pt-0 md:py-0'
+    className='h-auto md:h-[55rem] w-full rounded-md flex flex-col item-center justify-center relative overflow-hidden mx-auto pt-0 md:py-0'
     >
-        <WavyBackground className="max-w-4xl mx-auto pb-30">
+        <WavyBackground className="max-w-4xl mx-auto">
             <div className='p-4 relative z-10 w-full text-center' >
                 <p className="text-base md:text-3xl mt-4 text-white font-bold inter-var text-center">
                 Innovating for Smart Living through 
@@ -62,7 +62,7 @@ Explore Research </Link>
 
                     </div>
             </div>
-            <div className="m-40 flex justify-center text-center">
+
       {/* <HoverBorderGradient
         containerClassName="rounded-full"
         as="button"
@@ -72,7 +72,7 @@ Explore Research </Link>
         <span>Aceternity UI</span>
       </HoverBorderGradient> */}
 
-    </div>
+
 
 
   
