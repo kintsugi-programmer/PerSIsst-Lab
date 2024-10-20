@@ -4,8 +4,7 @@
 
 import { Spotlight } from "@/components/ui/Spotlight";
 import { Button } from "@/components/ui/moving-border";
-
-
+import { LinkPreview } from "@/components/ui/link-prev";
 
 
 
@@ -116,7 +115,7 @@ New Delhi, Delhi 110020
         /> */}
 
 <div className="flex py-5 justify-left space-x-2">
-  <Link href="https://www.linkedin.com/in/pragma-kar-9419143a/" target="_blank" style={{ pointerEvents: 'auto' }}>
+  {/* <Link href="https://www.linkedin.com/in/pragma-kar-9419143a/" target="_blank" style={{ pointerEvents: 'auto' }}>
     <Image
       src="/images/icons/ln.png"
       height="50"
@@ -124,9 +123,26 @@ New Delhi, Delhi 110020
       className="object-cover group-hover/card:shadow-xl"
       alt="LinkedIn"
     />
-  </Link>
+  </Link> */}
+  <LinkPreview
+          url="https://www.linkedin.com/in/pragma-kar-9419143a/"
+          className="font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-800 to-cyan-500"
+        >
+          <Image
+      src="/images/icons/ln.png"
+      height="50"
+      width="30"
+      className="object-cover group-hover/card:shadow-xl"
+      alt="LinkedIn"
+    />
+  </LinkPreview>
 
-  <Link href="https://scholar.google.com/citations?user=WSX1ovsAAAAJ&hl=en" target="_blank" style={{ pointerEvents: 'auto' }}>
+
+
+  <LinkPreview
+          url="https://scholar.google.com/citations?user=WSX1ovsAAAAJ&hl=en"
+          className="font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-800 to-cyan-500"
+        >
     <Image
       src="/images/icons/gs.png"
       height="50"
@@ -134,9 +150,13 @@ New Delhi, Delhi 110020
       className="object-cover group-hover/card:shadow-xl"
       alt="Google Scholar"
     />
-  </Link>
+  </LinkPreview>
 
-  <Link href="https://iiitd.irins.org/profile/554054" target="_blank" style={{ pointerEvents: 'auto' }}>
+
+  <LinkPreview
+          url="https://iiitd.irins.org/profile/554054"
+          className="font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-800 to-cyan-500"
+        >
     <Image
       src="/images/icons/id.png"
       height="50"
@@ -144,9 +164,13 @@ New Delhi, Delhi 110020
       className="object-cover group-hover/card:shadow-xl"
       alt="IRINS Profile"
     />
-  </Link>
+  </LinkPreview>
 
-  <Link href="https://www.iiitd.ac.in/pragma" target="_blank" style={{ pointerEvents: 'auto' }}>
+
+  <LinkPreview
+          url="https://www.iiitd.ac.in/pragma"
+          className="font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-800 to-cyan-500"
+        >
     <Image
       src="/images/icons/web.png"
       height="50"
@@ -154,7 +178,7 @@ New Delhi, Delhi 110020
       className="object-cover group-hover/card:shadow-xl"
       alt="Personal Website"
     />
-  </Link>
+  </LinkPreview>
   </div>
   <div className="flex justify-end ">
   <button className=" relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
