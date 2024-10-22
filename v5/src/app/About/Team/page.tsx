@@ -180,62 +180,67 @@ const WobbleCardDemo= () =>  {
           className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
         /> */}
 
-<div className="flex py-5 justify-left space-x-2">
-<LinkPreview
-          url="https://www.linkedin.com/in/pragma-kar-9419143a/"
-          className="font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-800 to-cyan-500"
-        >
-          <Image
+
+<div className="flex py-5 pl-2 justify-left space-x-2">
+  <Link 
+    href="https://www.linkedin.com/in/pragma-kar-9419143a/"
+    className="font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-800 to-cyan-500"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <Image
       src="/images/icons/ln.png"
       height="50"
       width="30"
-      className="object-cover group-hover/card:shadow-xl"
+      className="object-cover hover:shadow-xl"
       alt="LinkedIn"
     />
-  </LinkPreview>
+  </Link>
 
-
-
-  <LinkPreview
-          url="https://scholar.google.com/citations?user=WSX1ovsAAAAJ&hl=en"
-          className="font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-800 to-cyan-500"
-        >
+  <Link 
+    href="https://scholar.google.com/citations?user=WSX1ovsAAAAJ&hl=en"
+    className="font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-800 to-cyan-500"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
     <Image
       src="/images/icons/gs.png"
       height="50"
       width="30"
-      className="object-cover group-hover/card:shadow-xl"
+      className="object-cover hover:shadow-xl"
       alt="Google Scholar"
     />
-  </LinkPreview>
+  </Link>
 
-
-  <LinkPreview
-          url="https://iiitd.irins.org/profile/554054"
-          className="font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-800 to-cyan-500"
-        >
+  <Link 
+    href="https://iiitd.irins.org/profile/554054"
+    className="font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-800 to-cyan-500"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
     <Image
       src="/images/icons/id.png"
       height="50"
       width="30"
-      className="object-cover group-hover/card:shadow-xl"
+      className="object-cover hover:shadow-xl"
       alt="IRINS Profile"
     />
-  </LinkPreview>
+  </Link>
 
-
-  <LinkPreview
-          url="https://www.iiitd.ac.in/pragma"
-          className="font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-800 to-cyan-500"
-        >
+  <Link 
+    href="https://www.iiitd.ac.in/pragma"
+    className="font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-800 to-cyan-500"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
     <Image
       src="/images/icons/web.png"
       height="50"
       width="30"
-      className="object-cover group-hover/card:shadow-xl"
+      className="object-cover hover:shadow-xl"
       alt="Personal Website"
     />
-  </LinkPreview>
+  </Link>
 </div>
       </WobbleCard>
       
