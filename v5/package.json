@@ -6,9 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next build && next export"
+
   },
   "dependencies": {
+    "@radix-ui/react-accordion": "^1.2.1",
     "@radix-ui/react-hover-card": "^1.1.2",
     "@radix-ui/react-label": "^2.1.0",
     "@react-three/drei": "^9.114.0",
@@ -18,8 +21,10 @@
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.5.0",
     "@types/three": "^0.169.0",
+    "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.11.1",
+    "lucide-react": "^0.453.0",
     "mini-svg-data-uri": "^1.4.4",
     "next": "14.2.11",
     "qss": "^3.0.0",
@@ -27,7 +32,8 @@
     "react-dom": "^18",
     "react-element-to-jsx-string": "^15.0.0",
     "simplex-noise": "^4.0.3",
-    "tailwind-merge": "^2.5.3",
+    "tailwind-merge": "^2.5.4",
+    "tailwindcss-animate": "^1.0.7",
     "three": "^0.169.0"
   },
   "devDependencies": {

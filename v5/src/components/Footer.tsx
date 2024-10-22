@@ -27,34 +27,34 @@ const Footer = () => {
           <ul>
             <li>
               <a
-                href="#"
-                className="hover:text-cyan-500 transition-colors duration-300"
+                href="/"
+                className="hover:text-purple-500 transition-colors duration-300"
               >
                 Home
               </a>
             </li>
             <li>
               <a
-                href="#"
-                className="hover:text-cyan-500 transition-colors duration-300"
+                href="/About/Lab"
+                className="hover:text-purple-500 transition-colors duration-300"
               >
-                About
+                About Us
               </a>
             </li>
             <li>
               <a
-                href="#"
-                className="hover:text-cyan-500 transition-colors duration-300"
+                href="/Resources/FAQ"
+                className="hover:text-purple-500 transition-colors duration-300"
               >
-                Courses
+                FAQs
               </a>
             </li>
             <li>
               <a
-                href="#"
-                className="hover:text-cyan-500 transition-colors duration-300"
+                href="/Connect/Join"
+                className="hover:text-purple-500 transition-colors duration-300"
               >
-                Contact
+                Join Us
               </a>
             </li>
           </ul>
@@ -64,30 +64,31 @@ const Footer = () => {
           <div className="flex space-x-4">
             <a
               href="#"
-              className="hover:text-cyan-500 transition-colors duration-300"
+              className="hover:text-purple-500 transition-colors duration-300"
             >
-              Facebook
+              LinkedIn
             </a>
             <a
               href="#"
-              className="hover:text-cyan-500 transition-colors duration-300"
+              className="hover:text-purple-500 transition-colors duration-300"
             >
               Twitter
             </a>
             <a
               href="#"
-              className="hover:text-cyan-500 transition-colors duration-300"
+              className="hover:text-purple-500 transition-colors duration-300"
             >
-              Instagram
+              Facebook
             </a>
           </div>
         </div>
         <div>
           <h2 className="text-white text-lg font-semibold mb-4">Contact Us</h2>
           <p>PerSIsst Labs</p>
+          <p>A-413 (R&D block)</p>
           <p>Department of Human Centered Design, IIIT-Delhi </p>
             <p>Okhla Phase III, New Delhi, Delhi 110020</p>
-          <p>Email: info@persisstlabs.com</p>
+          <p>Email: persisst[at]iiitd[dot]ac[dot]in</p>
         </div>
         </div>
         <p className="text-center text-xs pt-8">© 2024 PerSIsst Labs IIIT-Delhi. All rights reserved.</p>

@@ -15,7 +15,8 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-export const metadata: Metadata = {
+export const generateViewport = () => {
+  return {
   title: "PerSIsst Lab | Pervasive Sensing & Intelligent Assistive Systems",
   description: "The Pervasive Sensing & Intelligent Assistive Systems (PerSIsst) Lab in IIIT-Delhi is a dynamic research space dedicated to innovating assistive technologies that enhance smart living. The interdisciplinary research focuses on harnessing cutting-edge research to create seamless, user-centric applications that address real-world challenges in health, wellness, and daily living. ",
   
@@ -79,7 +80,7 @@ export const metadata: Metadata = {
     follow: true, // Follows links
     nocache: false, // Allows caching
   },
-};
+};};
 
 export default function RootLayout({
   children,
@@ -90,7 +91,7 @@ export default function RootLayout({
     <html lang="en">
      
       <body
-        className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-black/[0.96] antialiased bg-grid-white/[0.02]`}
+        className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-black/[0.96] antialiased`}
       >
         <div className="relative w-full flex items-center"><Nav /></div>
         

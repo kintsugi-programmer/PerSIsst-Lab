@@ -30,7 +30,7 @@ import { cn } from "@/lib/utils"
 const Join = () => {
   return (
     <div
-    className="h-auto md:h-[50rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0"
+    className="h-auto bg-black/[0.96]  bg-grid-white/[0.02] md:h-[55rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0"
     >
         <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
@@ -42,7 +42,7 @@ const Join = () => {
             >Join Us</h1>
             <p
             className="mt-10 font-normal text-base md:text-lg text-neutral-300 mx-60"
-            >The Pervasive Sensing & Intelligent Assistive Systems (PerSIsst) Lab at the Department of Human-Centered Design (HCD), Indraprastha Institute of Information Technology Delhi (IIIT-Delhi), is actively seeking motivated researchers to join the Lab as Undergraduate/PostGraduate researchers, Research Assistants/Associates/Interns, PhD scholars, etc.<br></br> <br></br>The candidate will be working on cutting-edge technologies in the field of Human-Computer Interaction. To learn about current openings, follow us on our social media sites or follow the IIITD Website for more updates. <br></br>
+            >The Pervasive Sensing & Intelligent Assistive Systems (PerSIsst) Lab at the Department of Human-Centered Design (HCD), Indraprastha Institute of Information Technology Delhi (IIIT-Delhi), is actively seeking motivated researchers to join the Lab as Undergraduate/PostGraduate researchers, Research Assistants/Associates/Interns, PhD scholars, etc.<br></br> <br></br>The candidate will be working on cutting-edge technologies in the field of Human-Computer Interaction. To learn about current openings, follow us on our social media sites or follow the <Link href={"https://www.iiitd.ac.in/"} target="_blank" style={{ color: 'purple' }}>IIIT Delhi Official Website</Link> for more updates. <br></br>
 
             Self-funded candidates may apply on a rolling basis (any time of the year).<br></br><br></br> If you are interested in joining the research team on an immediate basis, please prepare a Statement of Purpose (PDF) and send it to <Link href="mailto:pragma@iiitd.ac.in?subject=Enquiry: Here&body=Body Here" style={{ color: 'purple' }}>
   persisst[at]iiitd[dot]ac[dot]in
@@ -50,7 +50,7 @@ const Join = () => {
             
             
             <br></br><br></br><br></br>
-            If you are interested in collaborating or sharing a relevant research idea, please reach out to us at <Link href="mailto:pragma@iiitd.ac.in?subject=Enquiry: Here&body=Body Here" style={{ color: 'purple' }}>
+            If you are interested in collaborating or sharing a relevant research idea, please reach out to us at <Link href="mailto:persisst@iiitd.ac.in?subject=Enquiry: Here&body=Body Here" style={{ color: 'purple' }}>
   persisst[at]iiitd[dot]ac[dot]in
 </Link>.
 
@@ -67,6 +67,24 @@ const Join = () => {
                 
             
         </div>
+        <div className="flex justify-end pt-6 pb-6">
+  <button className=" relative inline-flex  h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+  <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+  <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-5 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+  <Image
+              src='/images/PerSIsst_Final 1.svg'
+              alt='persisst logo'
+              width={25}
+              height={100}
+              className="mr-2"
+              
+              
+            /> <Link href="mailto:persisst@iiitd.ac.in?subject=Enquiry: Here&body=Body Here">
+            Apply Here
+
+          </Link>
+  </span>
+</button></div>
         
         </div>
     // <main className="min-h-screen bg-black/[0.96] antialiased bg-grid-white/[0.02]">

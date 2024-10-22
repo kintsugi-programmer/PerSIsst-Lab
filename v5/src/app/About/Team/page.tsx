@@ -10,6 +10,7 @@ import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
 import Image from "next/image";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import Link from "next/link";
+import { cn } from "@/lib/utils"
 
 
 import { WobbleCard } from "@/components/ui/wobble-card";
@@ -67,7 +68,7 @@ human-computer interaction (HCI) designs.
 const BG2 = () => {
   return (
     <> {/* Added padding top and bottom */}
-      <HeroHighlight containerClassName=""> {/* Adjusted height */}
+      <HeroHighlight containerClassName="h-[100rem]"> {/* Adjusted height 125 */}
         <motion.div
           initial={{
             opacity: 0,
@@ -87,6 +88,7 @@ const BG2 = () => {
           
         </motion.div>
         <WobbleCardDemo />
+        <Team/>
       </HeroHighlight>
       
     </>
@@ -155,7 +157,7 @@ const ThreeDCardDemo = () => {
 
 const WobbleCardDemo= () =>  {
   return (
- <div className="py-10 grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
+ <div className="py-5 grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
       <WobbleCard
         containerClassName="col-span-1 lg:col-span-2 h-full min-h-[500px] lg:min-h-[300px]"
         className=""
@@ -267,6 +269,100 @@ const WobbleCardDemo= () =>  {
           className="absolute -right-10 md:-right-[40%] lg:-right-[20%] -bottom-10 object-contain rounded-2xl"
         />
       </WobbleCard> */}
+      
     </div>
   );
 }
+
+
+const Team = () => {
+  return (
+    <>
+      <div className="flex justify-center space-x-5">
+        <CardDemo
+          title="Siddhant Bali"
+          description="Webmaster 2024 | B.Tech. 2026 CSD"
+          backgroundImgSrc="/team/bali1.jpeg"
+          link="https://www.linkedin.com/in/kintsugi-programmer/"
+        />
+        <CardDemo
+          title="Ashu"
+          description="IP 2024 | B.Tech. 2026 CSAM"
+          backgroundImgSrc="/team/Ashu.jpeg"
+          link="#"
+        />
+        {/* <CardDemo
+          title="Blog 3"
+          description="Coming Soon..."
+          backgroundImgSrc="/bg/3.png"
+          link="https://medium.com/"
+        />
+        <CardDemo
+          title="Blog 4"
+          description="Coming Soon..."
+          backgroundImgSrc="/bg/4.png"
+          link="https://medium.com/"
+        />
+      </div>
+      <div className="flex justify-center space-x-5 my-5">
+         <CardDemo
+          title="Blog 5"
+          description="Coming Soon..."
+          backgroundImgSrc="/bg/4.png"
+          link="https://medium.com/"
+        />
+        <CardDemo
+          title="Blog 6"
+          description="Coming Soon..."
+          backgroundImgSrc="/bg/2.jpg"
+          link="https://medium.com/"
+        />
+        <CardDemo
+          title="Blog 7"
+          description="Coming Soon..."
+          backgroundImgSrc="/bg/1.webp"
+          link="https://medium.com/"
+        /> */}
+      </div>
+    </>
+  );
+};
+
+
+    interface CardDemoProps {
+      title: string;
+      description: string;
+      backgroundImgSrc: string;
+      link: string;
+    }
+    
+    const CardDemo: React.FC<CardDemoProps> = ({
+      title,
+      description,
+      backgroundImgSrc,
+      link,
+    }) => {
+      return (
+        <div className="max-w-xs w-full">
+          <Link href={link} target="_blank" style={{ pointerEvents: 'auto' }}>
+            <div
+              className="overflow-hidden relative card h-96 rounded-2xl max-w-sm mx-auto flex flex-col justify-end p-4 border border-purple-500/[0.7]"
+              style={{
+                backgroundImage: `url(${backgroundImgSrc})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+              }}
+            >
+          <div className="bg-black/60 p-4  rounded-2xl">
+          <h1 className="font-bold text-white text-xl md:text-2xl text-white">
+                  {title}
+                </h1>
+                <p className="font-normal text-sm text-white my-2">
+                  {description}
+                </p>
+              </div>
+            </div>
+          </Link>
+        </div>
+      );
+    };
