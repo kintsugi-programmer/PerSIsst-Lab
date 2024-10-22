@@ -40,9 +40,9 @@ const Blogs = () => {
             <h1
             className="mt-20 md:mt-0 text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400"
             >Contact Us</h1>
-            <p
+            {/* <p
             className="mt-4 font-normal text-base md:text-lg text-neutral-300 max-w-lg mx-auto"
-            >Dive into our Experiences Gained from Hit-n-trials. Whether you're a beginner or looking to refine your skills, join us to unlock your true potential.</p>
+            >Dive into our Experiences Gained from Hit-n-trials. Whether you're a beginner or looking to refine your skills, join us to unlock your true potential.</p> */}
             
                 {/* <Link href={"/courses"}>
                     <Button
@@ -86,19 +86,22 @@ export default Blogs
 const WobbleCardDemo= () =>  {
   return (
     <div className="py-10 grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
-      <WobbleCard
-        containerClassName="col-span-1 lg:col-span-2  h-full bg-purple-800 min-h-[500px] lg:min-h-[300px]"
-        className=""
-      >        {/* added padding py-20 .its forced */}
+<WobbleCard
+  containerClassName="col-span-1 lg:col-span-2 h-full min-h-[500px] lg:min-h-[300px]"
+  className=""
+>
+  {/* Your content */}
+  {/* added padding py-20 .its forced */}
         <div className="max-w-md pt-10">
           <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
           Pervasive Sensing & Intelligent Assistive Systems Lab
           </h2>
           <p className="mt-4 text-left  text-base/6 text-neutral-200">
-          PerSIsst Labs,
+          PerSIsst Labs, A-413 (R&D block), <br />
+
 
 Department of Human Centered Design, <br />
-Indraprastha Institute of Information Technology Delhi (IIIT-Delhi) ,<br />
+Indraprastha Institute of Information Technology Delhi,<br />
 
 New Delhi, Delhi 110020
           </p>
@@ -180,8 +183,8 @@ New Delhi, Delhi 110020
     />
   </LinkPreview>
   </div>
-  <div className="flex justify-end ">
-  <button className=" relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+  <div className="flex justify-end pb-6">
+  <button className=" relative inline-flex  h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
   <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
   <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-5 py-1 text-sm font-medium text-white backdrop-blur-3xl">
   <Image
@@ -200,9 +203,9 @@ New Delhi, Delhi 110020
 </button></div>
 
       </WobbleCard>
-      <div className="col-span-1 rounded-2xl overflow-hidden">
+      <div className="col-span-1 rounded-2xl overflow-hidden border-2 border-purple-500 border-opacity-70">
   <iframe
-    className="rounded-2xl"
+    className="w-full h-full"
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.827615231125!2d77.26982302618208!3d28.544900738053585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3e45d85d3e3%3A0x691393414902968e!2sIIIT-Delhi%20R%26D%20Building!5e0!3m2!1sen!2sin!4v1726605696874!5m2!1sen!2sin"
     width="400"
     height="350"

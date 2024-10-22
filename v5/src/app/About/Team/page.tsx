@@ -155,11 +155,11 @@ const ThreeDCardDemo = () => {
 
 const WobbleCardDemo= () =>  {
   return (
-    <div className="py-10 grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
+ <div className="py-10 grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
       <WobbleCard
-        containerClassName="col-span-1 lg:col-span-2  h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
+        containerClassName="col-span-1 lg:col-span-2 h-full min-h-[500px] lg:min-h-[300px]"
         className=""
-      >        {/* added padding py-20 .its forced */}
+      >      {/* added padding py-20 .its forced */}
         <div className="max-w-xs pt-20">
           <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
           Dr. Pragma Kar
@@ -236,7 +236,8 @@ const WobbleCardDemo= () =>  {
   </LinkPreview>
 </div>
       </WobbleCard>
-      <WobbleCard containerClassName="col-span-1 bg-purple-800 min-h-[300px]">
+      
+      <WobbleCard containerClassName="col-span-1 min-h-[300px]">
       <Image
             src="/images/kar1.png"
             height="500"

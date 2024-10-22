@@ -30,15 +30,6 @@ function Navbar({ className }: { className?: string }) {
           />
         </Link>
 
-        <MenuItem setActive={setActive} active={active} item="Research">
-          <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/Research/Projects">Projects</HoveredLink>
-            <HoveredLink href="/Research/Publications">
-              Publications
-            </HoveredLink>
-          </div>
-        </MenuItem>
-
         <MenuItem setActive={setActive} active={active} item="About Us">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/About/Lab">Our Lab</HoveredLink>
@@ -51,6 +42,18 @@ function Navbar({ className }: { className?: string }) {
             </HoveredLink> */}
           </div>
         </MenuItem>
+
+        <MenuItem setActive={setActive} active={active} item="Research">
+          <div className="flex flex-col space-y-4 text-sm">
+          <HoveredLink href="/Research/Blogs">Blogs</HoveredLink>
+            <HoveredLink href="/Research/Projects">Projects</HoveredLink>
+            <HoveredLink href="/Research/Publications">
+              Publications
+            </HoveredLink>
+          </div>
+        </MenuItem>
+
+
 
         {/* <MenuItem setActive={setActive} active={active} item="Community">
           <div className="flex flex-col space-y-4 text-sm">
@@ -88,7 +91,6 @@ function Navbar({ className }: { className?: string }) {
         <MenuItem setActive={setActive} active={active} item="Resources">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/Resources/FAQ">FAQ</HoveredLink>
-            <HoveredLink href="/Resources/Blogs">Blogs</HoveredLink>
             <HoveredLink href="/Resources/InternalResources">InternalResources</HoveredLink>
             <HoveredLink href="/Resources/ExternalResources">ExternalResources</HoveredLink>
           </div>
@@ -97,8 +99,8 @@ function Navbar({ className }: { className?: string }) {
 
         <MenuItem setActive={setActive} active={active} item="Let's Connect">
           <div className="flex flex-col space-y-4 text-sm">
-          <HoveredLink href="/More/Join">Join Us</HoveredLink>
-            <HoveredLink href="/More/Contact">Contact Us</HoveredLink>
+          <HoveredLink href="/Connect/Join">Join Us</HoveredLink>
+            <HoveredLink href="/Connect/Contact">Contact Us</HoveredLink>
           </div>
         </MenuItem>
 

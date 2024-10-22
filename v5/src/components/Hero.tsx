@@ -27,7 +27,8 @@ const Hero = () => {
 
             <div className='relative z-10 max-w-4xl mx-auto p-4 w-full text-center'>
                 <p className="text-base md:text-3xl mt-4 text-white font-bold inter-var text-center">
-                    Innovating for Smart Living through 
+                Crafting Smart Living Through
+
                 </p>
 
                 <h1 className='mt-0 md:mt-0 text-4xl md:text-7xl font-bold'>
@@ -35,7 +36,7 @@ const Hero = () => {
                 </h1>
 
                 <p className="text-base md:text-lg mt-4 text-white font-normal inter-var text-center">
-                    The Pervasive Sensing & Intelligent Assistive Systems (PerSIsst) Lab develops intelligent, assistive solutions using advanced sensing to address challenges in cognition and smart living. 
+                The Pervasive Sensing & Intelligent Assistive Systems (PerSIsst) Lab is a dynamic research space dedicated to innovating assistive technologies that enhance smart living. The interdisciplinary research focuses on harnessing cutting-edge research to create seamless, user-centric applications that address real-world challenges in health, wellness, and daily living.  
                 </p> 
                     
                 <div className="m-7 flex justify-center text-center">

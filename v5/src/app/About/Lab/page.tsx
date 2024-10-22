@@ -12,6 +12,7 @@ const Lab = () => {
   return (
     <main className="min-h-screen bg-black/[0.96] antialiased bg-grid-white/[0.02]">
       {/* <BG/> */}
+      
       <BG2/>
 
       
@@ -51,16 +52,15 @@ const Type = () =>  {
   ];
   return (
     <div className="flex flex-col items-center justify-center h-[15rem]  ">
-      <TypewriterEffectSmooth words={words} />
+      <TypewriterEffectSmooth words={words} /><p
+    className="  font-normal text-center md:text-lg  max-w-screen-lg mx-auto"
+    >
+The Pervasive Sensing & Intelligent Assistive Systems (PerSIsst) Lab, founded by Dr. Pragma Kar, is a creative research hub dedicated to designing Human-Centric solutions that assist in smart living. The lab provides an innovation space to the team of researchers and engineers who are passionate about weaving novel techniques of integrating systems with sensing capabilities to solve critical challenges in people’s lives.</p>
       {/* <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
        for buttons
       </div> */}
-    <p
-    className=" font-normal text-center md:text-lg  max-w-lg mx-auto"
-    >
-At PerSIsst, our team of passionate researchers and engineers focuses on tackling key challenges in human cognition, mental health, mindful technology, and inclusive 
-human-computer interaction (HCI) designs.
-     </p>
+                  
+ 
      
     </div>
   );
@@ -89,10 +89,10 @@ const Type2 = () =>  {
        for buttons
       </div> */}
      <p
-    className="  font-normal text-center md:text-lg  max-w-screen-md mx-auto"
+    className="  font-normal text-center md:text-lg  max-w-screen-lg mx-auto"
     >
-     By utilizing state-of-the-art AI techniques, learning approaches, and bio-inspired models, we aim to address global, societal, and personal challenges, making life smarter, healthier, and more connected.
-     </p>
+The Lab aims at facilitating cutting-edge research in the field of Ubiquitous Computing, Pervasive Sensing, Artificial Intelligence and allied domains to solve real-world problems in the interdisciplinary domains of Cognitive Psychology, Health & Wellness, Smart Space, Inclusive and Accessible Assistive System design, and related areas. 
+</p>
      
     </div>
   );
@@ -103,6 +103,7 @@ const BG2 = () => {
   return (
     <>
     <HeroHighlight>
+      
       <motion.h1
         initial={{
           opacity: 0,
@@ -117,11 +118,13 @@ const BG2 = () => {
           ease: [0.4, 0.0, 0.2, 1],
         }}
         
-      >
-              <Type/>
+      ><Type/>
+              
+
+
 
      <p
-    className="  font-normal text-center md:text-lg  max-w-screen-md mx-auto"
+    className=" pt-3 font-normal text-center md:text-lg  max-w-screen-lg mx-auto"
     >
 Our work spans a variety of domains, from smart entertainment to education, always driven by the core belief that pervasive, intelligent digital assistants—powered by secure, ubiquitous physiological and behavioral sensing—can make a significant impact.
      </p>
@@ -155,34 +158,30 @@ Our work spans a variety of domains, from smart entertainment to education, alwa
 const Card_div = () => {
   return (
     <>
-      <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-black w-full gap-4 mx-auto px-8">
-        <Card ptr="Mission" title="Transforming everyday life through smart living technologies. We address challenges in cognition, mental health, and inclusive interaction with advanced sensing and
- AI-driven systems" icon={<V1 />}>
+      <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-black w-full gap-0 mx-auto px-20">
+        <Card ptr="Mission" title="Transforming lives through smart innovations – people face challenges from basic issues like cognition and health to advanced needs like interactivity and smart assistance." icon={<V1 />}>
           <CanvasRevealEffect
             animationSpeed={5.1}
-            containerClassName="bg-emerald-900"
+            containerClassName="bg-black-900"
+            colors={[[255, 0, 255]]}
           />
         </Card>
-        <Card ptr="Vision"title="Building a world where intelligent systems seamlessly enhance daily life, fostering cognitive support, mindfulness, and inclusivity through advanced sensing and AI." icon={<V2/>}>
-          <CanvasRevealEffect
-            animationSpeed={3}
-            containerClassName="bg-black"
-            colors={[
-              [236, 72, 153],
-              [232, 121, 249],
-            ]}
-            dotSize={2}
-          />
-          {/* Radial gradient for the cute fade */}
-          <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/90" />
-        </Card>
-        <Card ptr="Values" title="Innovation, inclusivity, and teamwork drive our efforts to create solutions that improve well-being and make smart living accessible to everyone" icon={<V3 />}>
-          <CanvasRevealEffect
-            animationSpeed={3}
-            containerClassName="bg-sky-600"
+        <Card ptr="Vision"title="Weaving a smarter tomorrow for all - curating a world where intelligent and smart technology can seamlessly integrate with and enhance the quality of daily living through PerSIsst Lab." icon={<V2/>}>
+        <CanvasRevealEffect
+            animationSpeed={5.1}
+            containerClassName="bg-black-900"
             colors={[[125, 211, 252]]}
-          />
 
+          />
+          {/* Radial gradient for the cute fade
+          <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/90" /> */}
+        </Card>
+        <Card ptr="Values" title="Assist to innovate, innovate to assist - valuing innovations that involve creative and free-thinking, individual as well as team effort, and a spirit to bring a positive transformation to lives" icon={<V3 />}>
+        <CanvasRevealEffect
+            animationSpeed={5.1}
+            containerClassName="bg-black-900"
+            colors={[[0, 255, 0]]}
+          />
           
         </Card>
       </div>
