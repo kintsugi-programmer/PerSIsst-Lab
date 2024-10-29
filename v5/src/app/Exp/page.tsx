@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import ToolTip from '@/components/ToolTip'
 import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards'
@@ -100,17 +101,47 @@ Explore Research </Link>
   link="https://medium.com/"
 />
 </div>
-
-
-
-
-
+    
     </div>
   )
+
 }
 
 export default page
 
+interface IconCardProps {
+  iconSrc: string; // Source for the icon image
+  title: string;   // Title of the card
+  description: string; // Description text for the card
+}
+
+const IconCard: React.FC<IconCardProps> = ({ iconSrc, title, description }) => {
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>, card: HTMLDivElement) => {
+    const { left, top } = card.getBoundingClientRect();
+    const x = e.clientX - left; // Mouse X relative to card
+    const y = e.clientY - top;  // Mouse Y relative to card
+    card.style.setProperty('--x', `${x}px`);
+    card.style.setProperty('--y', `${y}px`);
+  };
+
+  return (
+    <div className="iconcard">
+      <div className="icontainer">
+        <div
+          className="icard"
+          onMouseMove={(e) => handleMouseMove(e, e.currentTarget)}
+        >
+          <div className="icontent">
+            <img className="iicon" src={iconSrc} alt={`${title} Icon`} />
+            <h3 className="ititle">{title}</h3>
+            <p className="idescription">{description}</p>
+          </div>
+        </div>
+        {/* Add more cards as needed */}
+      </div>
+    </div>
+  );
+};
 
 
 const testimonials = [

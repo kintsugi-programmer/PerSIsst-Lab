@@ -146,7 +146,9 @@ Our work spans a variety of domains, from smart entertainment to education, alwa
       
     </HeroHighlight>
     <Type2/>
-    <Card_div/>
+    {/* <Card_div/>  */}
+    {/* Card_div Replaced by Card_div2 */}
+    <Card_div2/>
 
     </>
     
@@ -154,6 +156,68 @@ Our work spans a variety of domains, from smart entertainment to education, alwa
 }
 
 
+interface IconCardProps {
+  iconSrc: string; // Source for the icon image
+  title: string;   // Title of the card
+  description: string; // Description text for the card
+}
+
+const IconCard: React.FC<IconCardProps> = ({ iconSrc, title, description }) => {
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>, card: HTMLDivElement) => {
+    const { left, top } = card.getBoundingClientRect();
+    const x = e.clientX - left; // Mouse X relative to card
+    const y = e.clientY - top;  // Mouse Y relative to card
+    card.style.setProperty('--x', `${x}px`);
+    card.style.setProperty('--y', `${y}px`);
+  };
+
+  return (
+    <div className="iconcard">
+      <div className="icontainer">
+        <div
+          className="icard"
+          onMouseMove={(e) => handleMouseMove(e, e.currentTarget)}
+        >
+          <div className="icontent">
+            <img className="iicon" src={iconSrc} alt={`${title} Icon`} />
+            <h3 className="ititle">{title}</h3>
+            <p className="idescription">{description}</p>
+          </div>
+        </div>
+        {/* Add more cards as needed */}
+      </div>
+    </div>
+  );
+};
+
+const Card_div2 = () => {
+  return (
+    
+<div className="py-5 flex flex-col lg:flex-row items-center justify-center bg-black w-full gap-10 mx-auto px-20">
+
+<IconCard 
+        iconSrc="/images/purpoes/Vector.svg" 
+        title="Mission" 
+        description="Transforming lives through smart innovations – people face challenges from basic issues like cognition and health to advanced needs like interactivity and smart assistance." 
+      />
+<IconCard 
+              iconSrc="/images/purpoes/Vector-1.svg" 
+              title="Vision" 
+              description="Weaving a smarter tomorrow for all - curating a world where intelligent and smart technology can seamlessly integrate with and enhance the quality of daily living through PerSIsst Lab." 
+            />
+
+<IconCard 
+        iconSrc="/images/purpoes/Vector-2.svg" 
+        title="Value" 
+        description="Assist to innovate, innovate to assist - valuing innovations that involve creative and free-thinking, individual as well as team effort, and a spirit to bring a positive transformation to lives" 
+      />
+      
+
+
+
+    </div>
+  )
+}
 
 const Card_div = () => {
   return (
