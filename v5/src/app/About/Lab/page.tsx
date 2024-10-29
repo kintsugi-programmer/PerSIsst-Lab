@@ -83,16 +83,12 @@ const Type2 = () =>  {
 
   ];
   return (
-    <div className="flex flex-col items-center justify-center h-[15rem]  ">
+    <div className="flex flex-col items-center justify-center h-[5rem]  "> 
+    {/* 15 to 5 rem height */}
       <TypewriterEffectSmooth words={words} />
       {/* <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
        for buttons
       </div> */}
-     <p
-    className="  font-normal text-center md:text-lg  max-w-screen-lg mx-auto"
-    >
-The Lab aims at facilitating cutting-edge research in the field of Ubiquitous Computing, Pervasive Sensing, Artificial Intelligence and allied domains to solve real-world problems in the interdisciplinary domains of Cognitive Psychology, Health & Wellness, Smart Space, Inclusive and Accessible Assistive System design, and related areas. 
-</p>
      
     </div>
   );
@@ -126,7 +122,10 @@ const BG2 = () => {
      <p
     className=" pt-3 font-normal text-center md:text-lg  max-w-screen-lg mx-auto"
     >
-Our work spans a variety of domains, from smart entertainment to education, always driven by the core belief that pervasive, intelligent digital assistants—powered by secure, ubiquitous physiological and behavioral sensing—can make a significant impact.
+    
+The Lab aims at facilitating cutting-edge research in the field of Ubiquitous Computing, Pervasive Sensing, Artificial Intelligence and allied domains to solve real-world problems in the interdisciplinary domains of Cognitive Psychology, Health & Wellness, Smart Space, Inclusive and Accessible Assistive System design, and related areas. 
+
+    
      </p>
      
 
@@ -193,7 +192,7 @@ const IconCard: React.FC<IconCardProps> = ({ iconSrc, title, description }) => {
 const Card_div2 = () => {
   return (
     
-<div className="py-5 flex flex-col lg:flex-row items-center justify-center bg-black w-full gap-10 mx-auto px-20">
+<div className="py-5 flex flex-col lg:flex-row items-center justify-center bg-black w-full gap-10 pb-40 mx-auto px-20">
 
 <IconCard 
         iconSrc="/images/purpoes/Vector.svg" 
