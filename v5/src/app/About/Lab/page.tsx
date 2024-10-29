@@ -97,24 +97,24 @@ const Type2 = () =>  {
 
 const BG2 = () => {
   return (
-    <>
-    <HeroHighlight>
-      
-      <motion.h1
-        initial={{
-          opacity: 0,
-          y: 20,
-        }}
-        animate={{
-          opacity: 1,
-          y: [20, -5, 0],
-        }}
-        transition={{
-          duration: 0.5,
-          ease: [0.4, 0.0, 0.2, 1],
-        }}
+    <>        <div className="bg-[#010114] h-screen overflow-hidden relative">
+    <div className="absolute top-0 left-0 w-full h-full">
+        {/* Ellipse layer */}
+        <img 
+            src="/bg/Ellipse_8.png" 
+            alt="ellipse" 
+            className="absolute top-1/2 left-1/2 w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2 z-10" 
+        />
         
-      ><Type/>
+        {/* Vector layer */}
+        <img 
+            src="/bg/Vector.png" 
+            alt="vector" 
+            className="absolute top-[25%] md:top-[20%] lg:top-[30%] left-[45vw] md:left-[40vw] lg:left-[50vw] transform -translate-x-1/2 -translate-y-1/2 z-20" 
+        />
+    </div>
+    <div className="relative z-30 pt-[10vw]"> {/* Reserve space for navbar */}
+<Type/>
               
 
 
@@ -140,10 +140,9 @@ The Lab aims at facilitating cutting-edge research in the field of Ubiquitous Co
 
               </div> */}
       
+      </div>
+        </div>
 
-      </motion.h1>
-      
-    </HeroHighlight>
     <Type2/>
     {/* <Card_div/>  */}
     {/* Card_div Replaced by Card_div2 */}
