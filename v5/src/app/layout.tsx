@@ -93,9 +93,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-black/[0.96] antialiased`}
       >
-        <div className="relative w-full flex items-center"><Nav /></div>
-        
+        <div className="relative w-full h-full flex items-center"><Nav /></div>
+        <div>
         {children}
+        </div>
         <Footer />
         
       </body>

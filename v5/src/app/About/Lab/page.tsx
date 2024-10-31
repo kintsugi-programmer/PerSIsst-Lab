@@ -6,6 +6,7 @@ import { HeroHighlight,Highlight } from '@/components/ui/hero-highlight';
 
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
+import Image from "next/image";
 
 
 const Lab = () => {

@@ -15,7 +15,7 @@ import { cn } from "@/lib/utils"
 
 import { WobbleCard } from "@/components/ui/wobble-card";
 
-const Professor = () => {
+const Community = () => {
   return (
     <main className="min-h-screen bg-black/[0.96] antialiased bg-grid-white/[0.02]">
       {/* <BG/> */}
@@ -42,7 +42,7 @@ const Type = () =>  {
       className: "text-purple-500",
     },
     {
-      text: "Team",
+      text: "Community",
       className: "text-purple-500",
     },
   ];
@@ -68,7 +68,7 @@ human-computer interaction (HCI) designs.
 const BG2 = () => {
   return (
     <> {/* Added padding top and bottom */}
-      <HeroHighlight containerClassName="h-[100rem]"> {/* Adjusted height 125 */}
+      <HeroHighlight containerClassName="h-[55rem]"> {/* Adjusted height 125 */}
         <motion.div
           initial={{
             opacity: 0,
@@ -87,7 +87,7 @@ const BG2 = () => {
           <Type />
           
         </motion.div>
-        <WobbleCardDemo />
+        {/* <WobbleCardDemo /> */}
         <Team/>
       </HeroHighlight>
       
@@ -98,7 +98,7 @@ const BG2 = () => {
 
 
 
-export default Professor
+export default Community
 
 
 
