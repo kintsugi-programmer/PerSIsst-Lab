@@ -1,11 +1,42 @@
+
+'use client'
 import Hero from "@/components/Hero";
 import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards'
-
-export default function Home() {
+import Events from "@/components/EventSlider";
+import { HeroHighlight,Highlight } from '@/components/ui/h2';
+import { AnimatePresence, motion } from "framer-motion";
+const BG2 = () => {
   return (
-    <main className="min-h-screen bg-black/[0.96] antialiased bg-grid-white/[0.02]">
-      <Hero />
-      {/*<div className="h-[40rem] w-full dark:bg-black dark:bg-grid-white/[0.2] relative flex flex-col items-center justify-center overflow-hidden">
+    <> {/* Added padding top and bottom */}
+      <HeroHighlight containerClassName=""> {/* Adjusted height 125 */}
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: 20,
+          }}
+          animate={{
+            opacity: 1,
+            y: [20, -5, 0],
+          }}
+          transition={{
+            duration: 0.5,
+            ease: [0.4, 0.0, 0.2, 1],
+          }}
+          className="flex flex-col items-center justify-center w-full h-full"
+        >
+<div className="pt-10">
+    <div
+          style={{
+            maxWidth: "800px",
+            margin: "0 auto",
+            aspectRatio: "11 / 5",
+            width: "100%",
+          }}
+        >
+                  <h2 className="text-3xl font-bold text-center mb-8 z-10">Events</h2><Events events={events} />
+           
+        </div></div>
+        <div className="h-[40rem] w-full relative flex flex-col items-center justify-center overflow-hidden ">
         <h2 className="text-3xl font-bold text-center mb-8 z-10">Hear our Harmony: Voices of success</h2>
         <div className="flex justify-center w-full overflow-hidden px-4 sm:px-6 lg:px-8">
              <div className="w-full max-w-6xl">
@@ -16,7 +47,59 @@ export default function Home() {
       />
             </div> 
         </div>
-    </div>*/}
+    </div>
+    
+    
+
+          
+        </motion.div>
+        {/* <WobbleCardDemo /> */}
+
+      </HeroHighlight>
+      
+    </>
+  );
+}
+
+
+
+
+    const events = [
+      {
+        type: "Upcoming Events",
+        title: "Workshop on Cognitive Assistive Technologies",
+        description: "A hands-on workshop exploring cognitive technologies and their real-world applications in assistive systems.",
+        date: "12 Nov-2024",
+        location: "A-413 PerSisst-Lab, IIITD",
+        background_image_url: "/bg/1.webp",
+      },
+      {
+        type: "Upcoming Events",
+        title: "AI and Ethics Seminar",
+        description: "Join us for an engaging seminar on the ethical implications of AI in modern society.",
+        date: "20 Nov-2024",
+        location: "B-210 Conference Hall, IIITD",
+        background_image_url: "/bg/2.jpg",
+      },
+      {
+        type: "Upcoming Events",
+        title: "Hackathon: Code for Change",
+        description: "A 48-hour coding marathon aimed at solving societal problems through innovative software solutions.",
+        date: "28 Nov-2024",
+        location: "C-101 Tech Hub, IIITD",
+        background_image_url: "/bg/3.png",
+      },
+    ];
+
+
+
+export default function Home() {
+  return (
+    <main className="min-h-screen bg-black/[0.96] antialiased bg-grid-white/[0.02]">
+      <Hero />
+      <BG2/>
+      
+
     </main>
   );
 }
