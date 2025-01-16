@@ -96,6 +96,7 @@ root/
 9. Never use CLI Install for UI/Libs/Etc.  - use manual installation
 10. Maintain accessibility standards
 11. Implement responsive design
+12. Involves a lot of icon and other libraries with the regular Node.js folder (contact developers for exact info about them)
 
 ### UI/Layout Guidelines
 1. Structure top alignment using `h-[55rem]`
@@ -206,7 +207,7 @@ cp -r out/* /var/www/html/persisst/
 3. File permission issues: Work within user permissions
 
 ## 👥 Team & Credits
-- Original Webmaster & Builder (2024): [Siddhant Bali](https://github.com/kintsugi-programmer)
+- Original Webmaster & Builder (2024): [Siddhant Bali](https://github.com/kintsugi-programmer) , [Vinay Kumar Dubey](https://github.com/vinay22573/)
 - Lab Director: Dr. Pragma Kar
 - IT Support: IT-Team@IIITD
 
