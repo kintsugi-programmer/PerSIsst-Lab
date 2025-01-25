@@ -207,8 +207,9 @@ cp -r out/* /var/www/html/persisst/
 3. File permission issues: Work within user permissions
 
 ## 👥 Team & Credits
-- Original Webmaster & Builder (2024): [Siddhant Bali](https://github.com/kintsugi-programmer) 
+- Webmaster & Backend Developer (2024): [Siddhant Bali](https://github.com/kintsugi-programmer) 
 - Frontend Developer: [Vinay Kumar Dubey](https://github.com/vinay22573/)
+- Frontend Designer: [Daksh Tongaria](https://www.behance.net/dakshtongaria)
 - Lab Director: Dr. Pragma Kar
 - IT Support: IT-Team@IIITD
 
