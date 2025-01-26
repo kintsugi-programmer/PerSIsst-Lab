@@ -4,7 +4,7 @@ import OurTeam from '@/components/OurTeam'
 import OpenPositions from '@/components/OpenPositions'
 function page() {
   return (
-    <section>
+    <section className='bg-slate-950'>
         <OpenPositions />
         <OurTeam />
     </section>
