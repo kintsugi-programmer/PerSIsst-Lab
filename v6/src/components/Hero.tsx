@@ -10,12 +10,12 @@ const events = [
     {
       type: "Upcoming Events",
       title: "Workshop on Cognitive Assistive Technologies",
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-      date: "12 Nov-2024",
-      location: "A-413 PerSisst-Lab, IIITD",
+      description: "Join us for a workshop on the latest advancements in cognitive assistive technologies.",
+      date: "21st Mar-2025",
+      location: "A-106 RnD, IIITD",
       background_image_url:
-        "https://info.smartevals.com/wp-content/uploads/2024/01/image-6-1024x683.jpeg",
-      learn_more_link: "/events/upcoming",
+        "https://old.iiitd.ac.in/sites/all/themes/impact_theme/images/riise.jpg",
+      learn_more_link: "https://rs.iiitd.ac.in/",
     },
     {
       type: "Ongoing Events",
@@ -113,7 +113,7 @@ const Hero = () => {
           className="absolute bottom-0 left-0 w-full h-auto z-10"
         />
         
-        <div className="w-full max-md:p-2 lg:pb-2 xl:max-w-[1024px] 2xl:max-w-[1280px] mx-auto  relative   rounded-2xl z-30" >
+        <div className="w-full max-md:p-2 lg:pb-4 xl:max-w-[1024px] 2xl:max-w-[1280px] mx-auto  relative   rounded-2xl z-30" >
           <CardEventSlider cards={events}/>
         </div>
       </div>

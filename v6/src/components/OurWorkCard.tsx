@@ -17,7 +17,7 @@ interface OurWorkCardProps {
 
 const OurWorkCard: React.FC<OurWorkCardProps> = ({ card }) => {
     return (
-        <div className="flex flex-col md:flex-row gap-4 md:gap-2 rounded-lg bg-[#10072B] mb-6">
+        <div className="flex flex-col md:flex-row gap-4 md:gap-2 rounded-lg bg-slate-950 mb-6">
             {/* Image Section */}
             <div className="flex-1 w-full md:w-1/2">
                 <img

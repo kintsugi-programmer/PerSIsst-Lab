@@ -77,7 +77,7 @@ function Navbar({ className }: { className?: string }) {
             <MenuItem setActive={setActive} active={active} item="Research">
               <div className="flex flex-col space-y-4 text-sm">
                 <HoveredLink href="/Research">Projects & Publication</HoveredLink>
-                <HoveredLink href="/Research/Blogs">Blogs</HoveredLink>
+                <HoveredLink href="/NotFound">Blogs</HoveredLink>
               </div>
             </MenuItem>
 
@@ -85,8 +85,8 @@ function Navbar({ className }: { className?: string }) {
             <MenuItem setActive={setActive} active={active} item="Resources">
               <div className="flex flex-col space-y-4 text-sm">
                 <HoveredLink href="/JoinUs/FAQs">FAQs</HoveredLink>
-                <HoveredLink href="/Research/Projects">Internal Resources</HoveredLink>
-                <HoveredLink href="/Research/Publications">External Resources</HoveredLink>
+                <HoveredLink href="/NotFound">Internal Resources</HoveredLink>
+                <HoveredLink href="/NotFound">External Resources</HoveredLink>
               </div>
             </MenuItem>
 
@@ -141,7 +141,7 @@ function Navbar({ className }: { className?: string }) {
                     </Link>
                     </li>
                     <li className="pb-2 text-xl py-2  text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900   ">
-                    <Link href="/Research/Blogs" onClick={() => setNavbar(!navbar)}>
+                    <Link href="/NotFound" onClick={() => setNavbar(!navbar)}>
                       Blogs
                     </Link>
                     </li>
@@ -159,12 +159,12 @@ function Navbar({ className }: { className?: string }) {
                     </Link>
                     </li>
                     <li className="pb-2 text-xl py-2  text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900   ">
-                    <Link href="/Research/Blogs" onClick={() => setNavbar(!navbar)}>
+                    <Link href="/NotFound" onClick={() => setNavbar(!navbar)}>
                       Internal Resources
                     </Link>
                     </li>
                     <li className="pb-2 text-xl py-2  text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900   ">
-                    <Link href="/Research/Blogs" onClick={() => setNavbar(!navbar)}>
+                    <Link href="/NotFound" onClick={() => setNavbar(!navbar)}>
                       External Resources
                     </Link>
                     </li>

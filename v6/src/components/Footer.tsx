@@ -18,10 +18,11 @@ export function Footer() {
       <div className="text-left">
         <h2 className="font-bold text-xl mt-4 text-white">Quick Links</h2>
         <div className="w-30 h-1 border-b-2 border-purple-400 rounded-2xl my-2"></div>
-        <a href="#" className="text-gray-400 block">Home</a>
-        <a href="#" className="text-gray-400 block">About us</a>
-        <a href="#" className="text-gray-400 block">FAQs</a>
-        <a href="#" className="text-gray-400 block">Join Us</a>
+        <a href="/" className="text-gray-400 block">Home</a>
+        <a href="/About/Lab" className="text-gray-400 block">About us</a>
+        <a href="/Research" className="text-gray-400 block">Research</a>
+        <a href="/JoinUs/FAQs" className="text-gray-400 block">FAQs</a>
+        <a href="/JoinUs" className="text-gray-400 block">Join Us</a>
       </div>
 
       {/* Follow Us */}
@@ -29,15 +30,15 @@ export function Footer() {
         <h2 className="font-bold text-xl mt-4 text-white">Follow Us</h2>
         <div className="w-30 h-1 border-b-2 border-purple-400 rounded-2xl my-2"></div>
         <div className="flex flex-col space-y-4">
-          <a href="#" className="flex items-center">
+          <a href="https://dblp.org/pid/191/4760.html" className="flex items-center">
             <FaLinkedin className="w-5 h-5 mr-2 text-gray-400" />
             <span className="text-gray-400">LinkedIn</span>
           </a>
-          <a href="#" className="flex items-center">
+          <a href="https://dblp.org/pid/191/4760.html" className="flex items-center">
             <FaFacebook className="w-5 h-5 mr-2 text-gray-400" />
             <span className="text-gray-400">Facebook</span>
           </a>
-          <a href="#" className="flex items-center">
+          <a href="https://dblp.org/pid/191/4760.html" className="flex items-center">
             <FaTwitter className="w-5 h-5 mr-2 text-gray-400" />
             <span className="text-gray-400">Twitter</span>
           </a>
