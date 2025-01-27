@@ -46,10 +46,10 @@ function OurTeam() {
                                     <div className="flex flex-col items-center justify-center gap-1">
                                         <h2 className="text-xl font-bold text-purple-700 pt-2">Pragma kar</h2>
                                         <p className="text-base text-purple-500 text-center py-1 px-4 font-semibold tracking-wider">
-                                            Lab director PerSisst | Professor IIITD | PhD, Jadavpur
+                                            Lab Director PerSisst | Professor IIITD | PhD, Jadavpur
                                         </p>
                                         <p className="text-sm text-slate-500 font-medium text-center py-1 px-4 tracking-wide">
-                                            Loves solving problems of real world and working on solutions which impacts millions positively.
+                                            Loves tosolve HCI based problems which impact millions positively.
                                         </p>
                                     </div>
                                     {/* Social Links */}
