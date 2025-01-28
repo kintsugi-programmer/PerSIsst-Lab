@@ -44,9 +44,9 @@ function Director() {
             <div className="relative col-span-1 lg:col-span-2 h-full min-h-[450px] flex flex-col gap-2 text-white text-wrap text-center">
               <div className='hidden lg:block p-10'></div>
               <h1 className="m-0 text-center pb-4  text-white text-4xl lg:text-5xl">Dr. Pragma Kar</h1>
-              <h3 className="text-3xl text-[#9961D9] lg:pb-2">Assistant Professor, PhD, Jadavpur University</h3>
+              <h3 className="text-3xl text-[#9961D9] lg:pb-2">Assistant Professor, IIT Delhi</h3>
               <p className='lg:pl-3 lg:pr-5 lg:pt-2 text-1.5xl text-lg lg:text-xl lg:tracking-wide'>Founder &amp; Director, Pervasive Sensing &amp; Intelligent Assistive Systems (<span className="text-[#9961D9]">PERSISST</span>) Lab</p>
-              <p className='lg:pl-3 lg:pr-5 lg:pt-2  text-1.5xl text-lg lg:text-xl lg:tracking-wide'>Associate Faculty, Center for Design and New Media (<span className="text-[#9961D9]">CDNM</span>)</p>
+              <p className='lg:pl-3 lg:pr-5 lg:pt-2  text-1.5xl text-lg lg:text-xl lg:tracking-wide'>Member, Center for Design and New Media (<span className="text-[#9961D9]">CDNM</span>)</p>
               <p className='lg:pl-3 lg:pr-5  lg:pt-2 text-1.5xl text-lg lg:text-xl lg:tracking-wide'>Indraprastha Institute of Information Technology (<span className="text-[#9961D9]">IIIT</span>) Delhi</p>
               <div className="flex gap-4 justify-center items-center p-4">
                 <Link href="https://www.linkedin.com/in/pragma-kar-9419143a/">
