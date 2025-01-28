@@ -17,21 +17,21 @@ export const AvailablePositions: Position[] = [
     {
         id: 2,
         title: "Research Internship",
-        learnMoreLink: "https://drive.google.com/file/d/1Hk_zx5W58bCjbFnN-SOfZC8PzwJ-JFen/view?usp=sharing",
+        learnMoreLink: "https://www.iiitd.ac.in/placement/internship-details",
         description: "Join our Research Team to explore advanced projects in AI, Data Science, and Machine Learning. Focus on novel algorithms and real-world applications, collaborating with experts on innovative solutions and gaining valuable research experience.",
         qualification: "Undergraduate/Graduate students with strong analytical and problem-solving skills. Knowledge of Machine Learning, AI, or statistical methods is a plus."
     },
     {
         id: 3,
         title: "PhD Position in AI Research",
-        learnMoreLink: "https://drive.google.com/file/d/1Hk_zx5W58bCjbFnN-SOfZC8PzwJ-JFen/view?usp=sharing",
+        learnMoreLink: "https://www.iiitd.ac.in/careers/",
         description: "Seeking highly motivated PhD candidates to conduct research in AI, Machine Learning & Data Science. Contribute to groundbreaking work and collaborate with experts to solve critical problems in the field of tech and data-driven solutions.",
         qualification: "Master's degree or equivalent in Computer Science, Engineering, or related fields. Strong background in AI/ML and research experience is required for this role."
     },
     {
         id: 4,
         title: "Research Assistant",
-        learnMoreLink: "https://drive.google.com/file/d/1Hk_zx5W58bCjbFnN-SOfZC8PzwJ-JFen/view?usp=sharing",
+        learnMoreLink: "https://www.iiitd.ac.in/careers/",
         description: "Looking for a Research Assistant to support ongoing projects in AI and Data Science. Your responsibilities will include data collection, algorithm implementation, literature review, and assisting in project development",
         qualification: "Bachelor's degree or ongoing studies in Computer Science, Engineering, or related fields. Previous experience in AI/ML, research projects, or data science is preferred."
     }
