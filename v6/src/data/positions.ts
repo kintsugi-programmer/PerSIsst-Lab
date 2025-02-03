@@ -9,10 +9,10 @@ export interface Position {
 export const AvailablePositions: Position[] = [
     {
         id: 1,
-        title: "BTech Internship",
+        title: "BTech Project",
         learnMoreLink: "https://drive.google.com/file/d/1Hk_zx5W58bCjbFnN-SOfZC8PzwJ-JFen/view?usp=sharing",
-        description: "Join the PerSIsst Lab as an intern to work on real-world applications of pervasive technology. Gain hands-on experience in cutting-edge tech and research. Expand your skills and explore new possibilities in an innovative environment.",
-        qualification: "BTech students in their 3rd or 4th year. Knowledge of AI, programming languages, or tech concepts preferred. Strong analytical skills and interest in tech are beneficial."
+        description: "Interested candidates may send their applications, along with their resumes, to persisst@iiitd.ac.in or visit https://www.iiitd.ac.in/careers/index.html for regular updates.",
+        qualification: "BTech students in their 3rd or 4th year. Knowledge of AI, programming languages, Human Computer Interaction(HCI), Design, or tech concepts preferred. Strong analytical skills and interest in tech are beneficial."
     },
     {
         id: 2,
@@ -23,9 +23,9 @@ export const AvailablePositions: Position[] = [
     },
     {
         id: 3,
-        title: "PhD Position in AI Research",
+        title: "PhD Scholar",
         learnMoreLink: "https://www.iiitd.ac.in/careers/",
-        description: "Seeking highly motivated PhD candidates to conduct research in AI, Machine Learning & Data Science. Contribute to groundbreaking work and collaborate with experts to solve critical problems in the field of tech and data-driven solutions.",
+        description: "Interested candidates may send their applications, along with their resumes, to persisst@iiitd.ac.in or visit https://www.iiitd.ac.in/careers/index.html for regular updates.",
         qualification: "Master's degree or equivalent in Computer Science, Engineering, or related fields. Strong background in AI/ML and research experience is required for this role."
     },
     {

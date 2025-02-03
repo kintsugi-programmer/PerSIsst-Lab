@@ -17,7 +17,7 @@ function HowToApply() {
                         <div className="max-container flex flex-col items-center justify-center">
                             <p className="text-center max-w-3xl max-sm:text-sm sm:text-base font-poppins text-white max-sm:px-6 py-2">
                                 We're excited that you're interested in joining PerSisst Lab! Follow the steps below to apply for our open positions.          </p>
-                            <div className="w-full lg:w-[1280px] flex justify-center items-center mt-5">
+                            {/* <div className="w-full lg:w-[1280px] flex justify-center items-center mt-5">
                                 <Link href="https://lets-be-single.com" legacyBehavior>
                                     <a className="p-[2px] relative mb-3">
                                         <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-fuchsia-500 rounded-2xl" />
@@ -26,7 +26,7 @@ function HowToApply() {
                                         </div>
                                     </a>
                                 </Link>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     <div className="relative flex flex-col space-y-1 lg:left-16 ">
@@ -67,11 +67,10 @@ function HowToApply() {
                             <div className="text-left flex-1">
                                 <h3 className="text-xl text-purple-500 font-bold">Submit Your Application</h3>
                                 <p className="text-white text-sm font-normal max-w-sm">
-                                    Click "Apply Now" or send your documents to: apply@persisstlab.org
+                                    Applications should be submitted to persisst@iiitd.ac.in or in accordance with the instructions provided in the advertisement.
                                 </p>
                             </div>
                         </div>
-
                         <div className="flex items-center gap-2 lg:gap-4 font-poppins p-4 ">
                             <div className="w-20 h-20 flex items-center justify-center rounded-full border-[5px] border-purple-600 text-white p-5 lg:p-4 ">
                                 <Image src="/assets/wait.svg" alt="Map Icon" width={80} height={80} />

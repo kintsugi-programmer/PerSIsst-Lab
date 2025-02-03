@@ -104,7 +104,7 @@ const JoinUs = () => {
           <p className="text-center max-w-3xl max-sm:text-sm sm:text-base font-poppins text-white max-sm:px-6 py-2">
             Join PerSIsst Lab to be part of a dynamic team driving innovation in AI, human cognition, mental health, and inclusive systems. Whether you're a student, researcher, or professional, you'll contribute to shaping the future of smart living.
           </p>
-          <div className="w-full lg:w-[1280px] flex justify-center items-center mt-5">
+          {/* <div className="w-full lg:w-[1280px] flex justify-center items-center mt-5">
             <Link href="https://lets-be-single.com" legacyBehavior>
               <a className="p-[2px] relative mb-3">
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-fuchsia-500 rounded-2xl" />
@@ -113,7 +113,7 @@ const JoinUs = () => {
                 </div>
               </a>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="max-md:px-2 mx-auto">
@@ -128,7 +128,7 @@ const JoinUs = () => {
             }}
             className="mt-8 bg-gradient-to-br from-slate-300 to-slate-400 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
           >
-            Open Positions <br /> @ PerSisst Lab
+            Open Positions <br /> @ PerSIsst Lab
           </motion.h1>
         </LampContainer>
         {/* This is the part which we might need removing also */}
