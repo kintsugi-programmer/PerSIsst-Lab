@@ -20,7 +20,7 @@ function Research() {
         <OurWorkCardSlider cards={OurWorkCards} />
         </div>
       </section>
-      <section className="w-full ">
+      {/* <section className="w-full ">
         <div className="mb-8">
         <h1 className="py-5 text-white text-center font-poppins text-4xl md:text-5xl max-md:font-bold font-semibold max-md:tracking-wide leading-normal self-stretch bg-gray-950">
             Future<span className="text-[#9961D9]"> Publications</span>
@@ -37,7 +37,7 @@ function Research() {
         />
       ))}
         </div>
-      </section>
+      </section> */}
 
     </main>
   );

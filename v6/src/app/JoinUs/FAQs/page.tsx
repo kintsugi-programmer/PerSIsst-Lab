@@ -68,7 +68,7 @@ const FAQ = () => {
                     <AccordionItem value="item-4">
                         <AccordionTrigger>Can I visit the PerSIsst Lab?</AccordionTrigger>
                         <AccordionContent>
-                            Yes, visits can be arranged by appointment. Please contact us through the <Link href={"/Connect/ContactUs"} style={{ color: 'pink' }}>Contact Us</Link> section to schedule a visit.   </AccordionContent>
+                            Yes, visits can be arranged by appointment. Please contact us through the <Link href={"/ContactUs"} style={{ color: 'pink' }}>Contact Us</Link> section to schedule a visit.   </AccordionContent>
                     </AccordionItem>
 
                     <AccordionItem value="item-5">

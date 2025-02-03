@@ -96,7 +96,7 @@ const Hero = () => {
       </div>
 
       {/* Conflicting Design Part - Correctly Positioned Below */}
-      <div className="relative w-full min-h-[70vh] bg-[#1b0946] h-auto bg-grid-white/[0.02] lg:mt-[-5rem] z-20 pt-8 flex flex-col justify-center">
+      {/* <div className="relative w-full min-h-[70vh] bg-[#1b0946] h-auto bg-grid-white/[0.02] lg:mt-[-5rem] z-20 pt-8 flex flex-col justify-center">
         <img
           src="/bg/Ellipse_Left.png"
           alt="ellipse-left"
@@ -116,7 +116,7 @@ const Hero = () => {
         <div className="w-full max-md:p-2 lg:pb-4 xl:max-w-[1024px] 2xl:max-w-[1280px] mx-auto  relative   rounded-2xl z-30" >
           <CardEventSlider cards={events}/>
         </div>
-      </div>
+      </div> */}
     </>
   )
 }
