@@ -16,24 +16,25 @@ export const AvailablePositions: Position[] = [
     },
     {
         id: 2,
-        title: "Research Internship",
-        learnMoreLink: "https://www.iiitd.ac.in/placement/internship-details",
-        description: "Join our Research Team to explore advanced projects in AI, Data Science, and Machine Learning. Focus on novel algorithms and real-world applications, collaborating with experts on innovative solutions and gaining valuable research experience.",
-        qualification: "Undergraduate/Graduate students with strong analytical and problem-solving skills. Knowledge of Machine Learning, AI, or statistical methods is a plus."
+        title: "Research Assistant",
+        learnMoreLink: "https://www.iiitd.ac.in/careers/",
+        description: "Interested candidates may send their applications, along with their resumes, to persisst@iiitd.ac.in or visit https://www.iiitd.ac.in/careers/index.html for regular updates.",
+        qualification: "Bachelor's/Master's degree in Computer Science, Engineering, Circuital Branches, Human Computer Interaction, Design, or related fields. Strong background in AI/ML and research experience is required for this role."
+
     },
     {
         id: 3,
         title: "PhD Scholar",
         learnMoreLink: "https://www.iiitd.ac.in/careers/",
         description: "Interested candidates may send their applications, along with their resumes, to persisst@iiitd.ac.in or visit https://www.iiitd.ac.in/careers/index.html for regular updates.",
-        qualification: "Master's degree or equivalent in Computer Science, Engineering, or related fields. Strong background in AI/ML and research experience is required for this role."
+        qualification: "Bachelor's/Master's degree in Computer Science, Engineering, Circuital Branches, Human Computer Interaction, Design, or related fields. Strong background in AI/ML and research experience is required for this role."
     },
     {
         id: 4,
-        title: "Research Assistant",
-        learnMoreLink: "https://www.iiitd.ac.in/careers/",
-        description: "Looking for a Research Assistant to support ongoing projects in AI and Data Science. Your responsibilities will include data collection, algorithm implementation, literature review, and assisting in project development",
-        qualification: "Bachelor's degree or ongoing studies in Computer Science, Engineering, or related fields. Previous experience in AI/ML, research projects, or data science is preferred."
+        title: "Research Internship",
+        learnMoreLink: "https://www.iiitd.ac.in/placement/internship-details",
+        description: "Join our Research Team to explore advanced projects in AI, Data Science, and Machine Learning. Focus on novel algorithms and real-world applications, collaborating with experts on innovative solutions and gaining valuable research experience.",
+        qualification: "Undergraduate/Graduate students with strong analytical and problem-solving skills. Knowledge of Machine Learning, AI, or statistical methods is a plus."
     }
   ]
 
