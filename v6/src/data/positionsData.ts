@@ -31,20 +31,6 @@ export const teamMembers = [
     ],
   },
   {
-    name: 'Debadatta Sethy',
-    title: 'PhD Scholar',
-    description: 'PhD@ IIITD | IIT Madras (Post Grad) | Mechanical Design Engineer(IIT Dhanbad)',
-    bgImageFront: '/assets/Debdutta_Padded.png',
-    bgImageBack: '/assets/Debdutta_Masked.png',
-    views: 'Passionate about Machine Design, CAD Modeling, and Engineering Simulation',
-    socialLinks: [
-      { href: 'https://www.linkedin.com/in/debadatta-sethy-7312b035/', icon: '/assets/in-filled.svg' },
-      { href: 'https://behance.net', icon: '/assets/behance-fill.svg' },
-      { href: 'https://x.com', icon: '/assets/x-filled.svg' },
-      { href: 'https://github.com', icon: '/assets/githubfilled.svg' },
-    ]
-  },
-  {
     name: 'Param Pratibha',
     title: 'PhD Scholar',
     description: 'PhD @ IIITD (HCI) | M.Tech (JNU) | B.Tech (MACET,Patna)',
